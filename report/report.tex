@@ -1,5 +1,5 @@
 % !TeX program = lualatex
-\documentclass[twocolumn, a4paper, 10pt]{ltjsarticle}
+\documentclass[twocolumn, a4paper, 10pt, fleqn]{ltjsarticle}
 
 % --- パッケージ ---
 \usepackage{luatexja-fontspec} % フォント設定用
@@ -9,6 +9,7 @@
 \usepackage{url}
 \usepackage{here}
 \usepackage{flushend}
+
 
 % --- レイアウト設定 ---
 \setlength{\columnsep}{10mm}
@@ -25,6 +26,7 @@
 
 % --- タイトル情報 ---
 \title{
+    \vspace{-8.5mm} % ← ここ！ 数値はプレビュー見ながら調整して（-15mmとか）
     \sffamily 
     % タイトル：14pt (Word基準) / 行間 20pt くらいにしておく
     \fontsize{14bp}{20bp}\selectfont 
@@ -41,8 +43,8 @@
         % @{} は表の左右の余計な隙間を消すおまじない
         \fontsize{10bp}{15bp}\selectfont
         \begin{tabular}{@{}l@{}} 
-            　宮﨑孝(鳥羽商船高等専門学校，Takashi MIYAZAKI)\\[2mm]
-            　児玉謙司(鳥羽商船高等専門学校，Kenji KODAMA)\\[2mm]
+            　宮﨑孝(鳥羽商船高等専門学校，Takashi MIYAZAKI)\\
+            　児玉謙司(鳥羽商船高等専門学校，Kenji KODAMA)\\
             ◯渡辺敦也(鳥羽商船高等専門学校，Atsuya WATANABE)※
         \end{tabular}
     }%
@@ -66,24 +68,90 @@
 }
 \makeatother
 
+\makeatletter % ← これがないとエラーになるから絶対入れて！
+\newcommand\blfootnote[1]{%
+    \begingroup
+    \renewcommand\thefootnote{}%
+    % ▼ ここがポイント！
+    % 「番号を入れるための枠」を破壊して、強制的に左詰め(\noindent)にする
+    \renewcommand\@makefntext[1]{\noindent ##1}% 
+    \footnote{#1}%
+    \addtocounter{footnote}{-1}%
+    \endgroup
+}
+\makeatother % ← これも忘れずに！
+
+\pagestyle{empty} % ページ番号を消す（フッター領域も消える）
+\linespread{0.85}
+% --- 数式の左インデント設定 ---
+% 3\zw = 全角文字(Zenkaku Width) 3つ分
+\setlength{\mathindent}{3\zw}
+
+\renewcommand{\footnotesize}{%
+    \fontsize{7.5bp}{10bp}\selectfont % 文字8pt / 行送り10pt
+}
+% --- 脚注の上の線をカラム幅いっぱいにする ---
+\renewcommand{\footnoterule}{%
+    \kern-3pt % 少し上に移動（デフォルト値）
+    \hrule width \columnwidth height 0.4pt % 幅を段の幅(\columnwidth)にする
+    \kern 2.6pt % 元の位置に戻す（デフォルト値）
+}
+
 % --- 本文開始 ---
 \begin{document}
 
 \maketitle
 
+\blfootnote{日本設計工学会東海支部令和7年度研究発表講演会(2026年2月28日)}
+
 % ここから2段組
 \section{はじめに}
-近年，ロボット業界でブラシレスDCモーター(以下，BLDCモーター)を用いたアクチュエータの需要が高まっている．しかし，日本国内かつ個人で購入可能なBLDCモーターに限定すると選択肢が限定され，使用用途に対してトルク・回転数等が要求仕様を大きく上回っていたり，サイズが合わない等の問題が起きる．\newline
+近年，ロボット業界でブラシレスDCモーター(以下，BLDCモーター)を用いたアクチュエータの需要が高まっている．しかし，日本国内かつ個人で購入可能なBLDCモーターに限定すると選択肢が限定され，使用用途に対してトルク・回転数等が要求仕様を大きく上回っていたり，サイズが合わない等の問題が起きる．\\
 　このことから，プロジェクトに合った性能・サイズを持つBLDCモーターの製作が要求される．
 ここで課題となるのが，ステータの材料である．一般的なBLDCモーターでは残留磁化・保磁力が極めて低く，高透磁率・低鉄損である電磁鋼板を用いることが多いが，小ロットでの入手が困難である．
-本研究では小ロットかつ安価に入手可能な材料であるSPCC(一般冷延鋼板)を用いてBLDCモーターのステータを設計・試作し，トルクを測定することで実用性を評価する．
+本研究では小ロットかつ安価に入手可能な材料であるSPCC(冷延鋼板)を用いてBLDCモーターのステータを設計・試作し，トルクを測定することで実用性を評価する．
 
 \section{BLDCモーターの設計}
+BLDCモーターには主にロータがコイルより内側にあるインナーロータ方式と，アウターロータ方式の2種類が存在する．減速機が無くてもトルクが出やすい後者の方がロボット業界では需要が高い．
+本研究では製作難易度とロボット業界での需要を踏まえ，アウターロータ方式のBLDCモーターを採用し，設計する．
+モデリングにはSolidWorksを使用する．
+
 \subsection{ステータの設計}
+ロボットアームやドローン用途に用いられる市販のアウターロータ方式のBLDCモーターの形状を参考に設計した．
+前研究では六角穴付きボルトを用いた9スロットのステータを設計したが，コギングトルクが非常に大きく精密な制御が困難であったためスロット数を15に増やし，コギングトルクが小さくなるように設計した．
+また，六角穴付きボルトの材質であるSCM435(クロムモリブデン鋼)とSPCC(冷延鋼板)では，後者の方が軟磁性体に近く，残留磁力が比較的小さいため，性能の向上が期待できる．\\
+　厚さ3.2mmの板をレーザー加工機で切り出し，断面を絶縁し4枚重ね合わせ接着することでステータを構成する．
+これにより，磁界によりステータ内部で発生する渦電流を減少させることができ，発熱を抑えることができる．
+\begin{figure}[H] % [tb]は「上(top)か下(bottom)に配置しろ」という指定
+    \centering     % 図を中央寄せ
+    % ▼ ここで画像を指定。[width=\linewidth]で段の幅ピッタリになる
+    \includegraphics[width=0.4\linewidth]{./figure/stater.png} 
+    \caption{設計したステータ} % キャプションは図の下が一般的
+    \label{fig:stater}            % 本文で参照するためのラベル
+\end{figure}
+
+
 \subsection{ロータの設計}
+12x10x5のネオジム磁石を用いた極数22極のロータを設計した．
+極数とスロット数の最小公倍数(LCM)は330であり，コギングトルクの減少，出力トルクの向上が期待できる．\\
+　BLDCモータの慣性モーメントはロータの慣性モーメントに依存し，その慣性モーメントはロータの質量M，半径をRとした時
+\begin{equation}
+    I = \frac{MR^2}{2}
+\end{equation}
+以上で与えられ，ロータ質量Mとロータ半径Rの2乗に比例して大きくなることが分かる．
+慣性モーメントが大きくなると，急加速，急停止等の制御が困難になる．
+ロータの材質をPLAとし，3Dプリンタで製造することで，慣性モーメントの低減を図る．
+アウターロータ方式のBLDCモーターは外部から空気が流れ込まないため，内部のコイルとステータがより多く発熱するという欠点があるが，肉抜きを行い空気の流入口を設けることで冷却性能を向上させている．
+\begin{figure}[H] % [tb]は「上(top)か下(bottom)に配置しろ」という指定
+    \centering     % 図を中央寄せ
+    % ▼ ここで画像を指定。[width=\linewidth]で段の幅ピッタリになる
+    \includegraphics[width=0.4\linewidth]{./figure/rotor.png} 
+    \caption{設計したロータ} % キャプションは図の下が一般的
+    \label{fig:rotor}            % 本文で参照するためのラベル
+\end{figure}
 
 \section{トルクの推定}
-
+あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
 \section{トルクの測定}
 \subsection{測定方法}
 \subsection{制御方法}
