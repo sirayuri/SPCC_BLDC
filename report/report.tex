@@ -1,0 +1,73 @@
+% !TeX program = lualatex
+\documentclass[twocolumn, a4paper, 10pt]{ltjsarticle}
+
+% --- パッケージ ---
+\usepackage{luatexja-fontspec} % フォント設定用
+\usepackage[top=20mm, bottom=20mm, left=20mm, right=20mm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{url}
+\usepackage{here}
+\usepackage{flushend}
+
+% --- レイアウト設定 ---
+\setlength{\columnsep}{10mm}
+
+% --- フォント設定（ここが重要） ---
+% 1. 本文（メイン）の設定 -> 明朝 & Century
+\setmainfont{Century}
+\setmainjfont{MS Mincho}
+
+% 2. ゴシック体・サンセリフの設定 -> MSゴシック & Arial
+% ltjsarticleは、章タイトルに自動的にこの「サンセリフ/ゴシック」を使う仕様になっている
+\setsansfont{Arial}
+\setsansjfont{MS Gothic}
+
+% --- タイトル情報 ---
+\title{
+    \sffamily % タイトル全体をArial/MSゴシックにする
+    \LARGE 日本語タイトル (MSゴシック) \\[2mm]
+    \large English Title (Arial)
+}
+\author{
+    \sffamily 
+    著者名$^{\dagger}$ \quad 著者名$^{\ddagger}$ \\[2mm]
+    \small $^{\dagger}$所属1 \quad $^{\ddagger}$所属2
+}
+\date{}
+
+% --- 本文開始 ---
+\begin{document}
+
+\maketitle
+
+% ここから2段組
+\section{はじめに}
+ここから本文。ここは指定通り「MS明朝」と「Century」になるはず。
+English Text Check: This text is in Century.
+1234567890
+
+\section{提案手法}
+章のタイトル（上の「提案手法」や「2.」）は、`ltjsarticle` の標準機能で、
+自動的に設定した「MSゴシック」と「Arial」が使われるはず。
+
+\begin{equation}
+    y = ax + b
+\end{equation}
+
+\section{実験結果}
+\begin{figure}[H]
+    \centering
+    \fbox{図}
+    \caption{Experimental Result}
+    \label{fig:res}
+\end{figure}
+
+\section{結言}
+これでエラーは消えるはず。
+
+\begin{thebibliography}{9}
+    \bibitem{ref1} 参考文献も本文フォント（Century/Mincho）になる。
+\end{thebibliography}
+
+\end{document}
