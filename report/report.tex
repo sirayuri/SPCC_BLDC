@@ -3,7 +3,7 @@
 
 % --- パッケージ ---
 \usepackage{luatexja-fontspec} % フォント設定用
-\usepackage[top=20mm, bottom=20mm, left=20mm, right=20mm]{geometry}
+\usepackage[top=20mm, bottom=20mm, left=18mm, right=18mm]{geometry}
 \usepackage{graphicx}
 \usepackage{amsmath,amssymb}
 \usepackage{url}
@@ -25,16 +25,46 @@
 
 % --- タイトル情報 ---
 \title{
-    \sffamily % タイトル全体をArial/MSゴシックにする
-    \LARGE 日本語タイトル (MSゴシック) \\[2mm]
-    \large English Title (Arial)
+    \sffamily 
+    % タイトル：14pt (Word基準) / 行間 20pt くらいにしておく
+    \fontsize{14bp}{20bp}\selectfont 
+    SPCCを用いたブラシレスモーターの設計試作とトルク測定 \\[2mm]
+    
+    % 英語タイトル：少し小さくする指定がなければそのままでいいけど、一応12ptとかにする？
+    \fontsize{14bp}{20bp}\selectfont 
+    Design, Fabrication, and Torque Analysis of a Brushless DC Motor Using SPCC
 }
 \author{
-    \sffamily 
-    著者名$^{\dagger}$ \quad 著者名$^{\ddagger}$ \\[2mm]
-    \small $^{\dagger}$所属1 \quad $^{\ddagger}$所属2
+\parbox{\textwidth}{% 1. ページ幅いっぱいの箱を作る
+        \hfill % 2. これで中身を全力で右に押しやる
+        % 3. ここに「左揃え(l)」の表を作る
+        % @{} は表の左右の余計な隙間を消すおまじない
+        \fontsize{10bp}{15bp}\selectfont
+        \begin{tabular}{@{}l@{}} 
+            　宮﨑孝(鳥羽商船高等専門学校，Takashi MIYAZAKI)\\[2mm]
+            　児玉謙司(鳥羽商船高等専門学校，Kenji KODAMA)\\[2mm]
+            ◯渡辺敦也(鳥羽商船高等専門学校，Atsuya WATANABE)※
+        \end{tabular}
+    }%
 }
 \date{}
+
+% --- 章・節タイトルの強制変更 (ゴシック10pt) ---
+\makeatletter
+% \section (1. はじめに) の設定
+\renewcommand{\section}{\@startsection{section}{1}{\z@}%
+    {1.0\Cvs \@plus.5\Cvs \@minus.2\Cvs}% 前の行間（少し狭めた）
+    {.5\Cvs \@plus.3\Cvs}% 後の行間
+    {\normalfont\sffamily\fontsize{10bp}{15bp}\selectfont}% ゴシック(sffamily) + 10pt
+}
+
+% \subsection (2.1 実験方法) の設定
+\renewcommand{\subsection}{\@startsection{subsection}{2}{\z@}%
+    {1.0\Cvs \@plus.5\Cvs \@minus.2\Cvs}%
+    {.5\Cvs \@plus.3\Cvs}%
+    {\normalfont\sffamily\fontsize{10bp}{15bp}\selectfont}% ゴシック + 10pt
+}
+\makeatother
 
 % --- 本文開始 ---
 \begin{document}
@@ -43,31 +73,29 @@
 
 % ここから2段組
 \section{はじめに}
-ここから本文。ここは指定通り「MS明朝」と「Century」になるはず。
-English Text Check: This text is in Century.
-1234567890
+近年，ロボット業界でブラシレスDCモーター(以下，BLDCモーター)を用いたアクチュエータの需要が高まっている．しかし，日本国内かつ個人で購入可能なBLDCモーターに限定すると選択肢が限定され，使用用途に対してトルク・回転数等が要求仕様を大きく上回っていたり，サイズが合わない等の問題が起きる．\newline
+　このことから，プロジェクトに合った性能・サイズを持つBLDCモーターの製作が要求される．
+ここで課題となるのが，ステータの材料である．一般的なBLDCモーターでは残留磁化・保磁力が極めて低く，高透磁率・低鉄損である電磁鋼板を用いることが多いが，小ロットでの入手が困難である．
+本研究では小ロットかつ安価に入手可能な材料であるSPCC(一般冷延鋼板)を用いてBLDCモーターのステータを設計・試作し，トルクを測定することで実用性を評価する．
 
-\section{提案手法}
-章のタイトル（上の「提案手法」や「2.」）は、`ltjsarticle` の標準機能で、
-自動的に設定した「MSゴシック」と「Arial」が使われるはず。
+\section{BLDCモーターの設計}
+\subsection{ステータの設計}
+\subsection{ロータの設計}
 
-\begin{equation}
-    y = ax + b
-\end{equation}
+\section{トルクの推定}
 
-\section{実験結果}
-\begin{figure}[H]
-    \centering
-    \fbox{図}
-    \caption{Experimental Result}
-    \label{fig:res}
-\end{figure}
+\section{トルクの測定}
+\subsection{測定方法}
+\subsection{制御方法}
+\subsection{測定値}
 
-\section{結言}
-これでエラーは消えるはず。
+\section{推定トルクと実測トルクの比較}
 
-\begin{thebibliography}{9}
-    \bibitem{ref1} 参考文献も本文フォント（Century/Mincho）になる。
-\end{thebibliography}
+\section{速度の測定}
+
+\section{温度特性の測定}
+
+\section{終わりに}
+
 
 \end{document}

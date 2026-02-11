@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.8.14)  11 FEB 2026 15:13
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.8.14)  11 FEB 2026 20:07
  restricted system commands enabled.
  file:line:error style messages enabled.
 **c:/Users/dubia/Desktop/SPCC_BLDC/report/report.tex
@@ -843,26 +843,26 @@ LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `bold'
  (./report.aux)
 \openout1 = report.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
 
 Package fontspec Info: 
 (fontspec)             Adjusting the maths setup (use [no-math] to avoid
@@ -870,56 +870,56 @@ Package fontspec Info:
 
 \symlegacymaths=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 40.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 40.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 40.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 40.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 40.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 40.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 40.
-LaTeX Font Info:    Redeclaring math accent \check on input line 40.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 40.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 40.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 40.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 40.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 40.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 40.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 40.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 40.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 40.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 40.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 40.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 40.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 40.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 40.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 40.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 40.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 70.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 70.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 70.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 70.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 70.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 70.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 70.
+LaTeX Font Info:    Redeclaring math accent \check on input line 70.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 70.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 70.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 70.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 70.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 70.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 70.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 70.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 70.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 70.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 70.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 70.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 70.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 70.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 70.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 70.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 70.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 40.
+(Font)              `operators' in the math version `normal' on input line 70.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/Century(0)/m/n on input line 40.
+(Font)                  OT1/cmr/m/n --> TU/Century(0)/m/n on input line 70.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 40.
+(Font)              `operators' in the math version `bold' on input line 70.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/Century(0)/m/n on input line 40.
+(Font)                  OT1/cmr/bx/n --> TU/Century(0)/m/n on input line 70.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/Century(0)/m/n --> TU/Century(0)/m/n on input line 40.
+(Font)                  TU/Century(0)/m/n --> TU/Century(0)/m/n on input line 70.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/Century(0)/m/it on input line 40.
+(Font)                  OT1/cmr/m/it --> TU/Century(0)/m/it on input line 70.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/Century(0)/b/n on input line 40.
+(Font)                  OT1/cmr/bx/n --> TU/Century(0)/b/n on input line 70.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/Arial(0)/m/n on input line 40.
+(Font)                  OT1/cmss/m/n --> TU/Arial(0)/m/n on input line 70.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 40.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 70.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/Century(0)/m/n --> TU/Century(0)/b/n on input line 40.
+(Font)                  TU/Century(0)/m/n --> TU/Century(0)/b/n on input line 70.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/Century(0)/b/it on input line 40.
+(Font)                  OT1/cmr/bx/it --> TU/Century(0)/b/it on input line 70.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/Arial(0)/b/n on input line 40.
+(Font)                  OT1/cmss/bx/n --> TU/Arial(0)/b/n on input line 70.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 40.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 70.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -929,14 +929,14 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* h-part:(L,W,R)=(51.21495pt, 495.07797pt, 51.21495pt)
 * v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=483.69687pt
+* \textwidth=495.07797pt
 * \textheight=731.23584pt
-* \oddsidemargin=-15.36449pt
-* \evensidemargin=-15.36449pt
+* \oddsidemargin=-21.05504pt
+* \evensidemargin=-21.05504pt
 * \topmargin=-51.06133pt
 * \headheight=20.0pt
 * \headsep=15.69684pt
@@ -975,207 +975,71 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 LaTeX Font Info:    Font shape `JT3/MSMincho(0)/m/n' will be
-(Font)              scaled to size 15.97903pt on input line 42.
+(Font)              scaled to size 15.97903pt on input line 72.
 LaTeX Font Info:    Font shape `JY3/MSMincho(0)/m/n' will be
-(Font)              scaled to size 15.97903pt on input line 42.
+(Font)              scaled to size 15.97903pt on input line 72.
 LaTeX Font Info:    Font shape `JT3/MSGothic(0)/m/n' will be
-(Font)              scaled to size 15.97903pt on input line 42.
+(Font)              scaled to size 15.97903pt on input line 72.
 LaTeX Font Info:    Font shape `JY3/MSGothic(0)/m/n' will be
-(Font)              scaled to size 15.97903pt on input line 42.
+(Font)              scaled to size 15.97903pt on input line 72.
 LaTeX Font Info:    Font shape `JT3/MSGothic(0)/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 42.
+(Font)              scaled to size 12.99452pt on input line 72.
 LaTeX Font Info:    Font shape `JY3/MSGothic(0)/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 42.
+(Font)              scaled to size 12.99452pt on input line 72.
 LaTeX Font Info:    Font shape `JT3/MSMincho(0)/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 42.
+(Font)              scaled to size 11.09656pt on input line 72.
 LaTeX Font Info:    Font shape `JY3/MSMincho(0)/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 42.
+(Font)              scaled to size 11.09656pt on input line 72.
 LaTeX Font Info:    Font shape `JY3/MSMincho(0)/m/n' will be
-(Font)              scaled to size 7.3977pt on input line 42.
+(Font)              scaled to size 7.3977pt on input line 72.
 LaTeX Font Info:    Font shape `JY3/MSMincho(0)/m/n' will be
-(Font)              scaled to size 5.54828pt on input line 42.
-LaTeX Font Info:    Trying loading font information for U+msa on input line 42.
+(Font)              scaled to size 5.54828pt on input line 72.
+LaTeX Font Info:    Trying loading font information for U+msa on input line 72.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying loading font information for U+msb on input line 42.
+LaTeX Font Info:    Trying loading font information for U+msb on input line 72.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `JT3/MSMincho(0)/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 42.
+(Font)              scaled to size 9.2818pt on input line 72.
 LaTeX Font Info:    Font shape `JY3/MSMincho(0)/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 42.
+(Font)              scaled to size 9.2818pt on input line 72.
+LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 72.
 LaTeX Font Info:    Font shape `JY3/MSMincho(0)/m/n' will be
-(Font)              scaled to size 4.62357pt on input line 42.
+(Font)              scaled to size 6.49721pt on input line 72.
 LaTeX Font Info:    Font shape `JY3/MSMincho(0)/m/n' will be
-(Font)              scaled to size 6.47299pt on input line 54.
+(Font)              scaled to size 4.64088pt on input line 72.
+
+Overfull \hbox (12.00002pt too wide) in paragraph at lines 72--72
+ [][][][] 
+ []
+
+LaTeX Font Info:    Font shape `JT3/MSGothic(0)/m/n' will be
+(Font)              scaled to size 9.24713pt on input line 75.
+LaTeX Font Info:    Font shape `JY3/MSGothic(0)/m/n' will be
+(Font)              scaled to size 9.24713pt on input line 75.
+LaTeX Font Info:    Font shape `JT3/MSGothic(0)/m/n' will be
+(Font)              scaled to size 9.2818pt on input line 75.
+LaTeX Font Info:    Font shape `JY3/MSGothic(0)/m/n' will be
+(Font)              scaled to size 9.2818pt on input line 75.
 
 
 
 
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
-[leftcolumn badness]: 1000000 on 10.07051pt
-[rightcolumn badness]: 1000000 on 10.07051pt
 - LAST -
-Extra skip:176.0514pt
-Left:276.32204pt/0.0pt
-Right:99.16098pt/1.10965pt
-Split: 270.36096pt
-Output:270.36096pt
-Pageshrink: 0.0pt
-Pagestretch: 0.0pt
-@colht:582.05472pt
-FLUSHEND [output]: 270.36096pt
-FLUSHEND [leftcolumn badness]: 98
-FUSHEND [rightcolumn badness]: 10000
+Extra skip:0.0pt
+Left:275.81732pt/0.0pt
+Right:281.436pt/1.11382pt
+Split: 280.24612pt
+Output:280.24612pt
+Pageshrink: 3.19995pt
+Pagestretch: 65.60059pt
+@colht:559.88821pt
+FLUSHEND [output]: 280.24612pt
+FLUSHEND [leftcolumn badness]: 4
+FUSHEND [rightcolumn badness]: 5
 [1{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
@@ -1187,19 +1051,19 @@ L3 programming layer <2025-07-20>
 )
 
 Here is how much of LuaTeX's memory you used:
- 8299 strings out of 470118
+ 8303 strings out of 470118
  125244,794899 words of node,token memory allocated
- 2932 words of node memory still in use:
-   10 hlist, 2 vlist, 5 rule, 3 glue, 4 kern, 1 penalty, 1 glyph, 1059 attribute, 55 glue_spec, 107 attribute_list, 1 write, 13 user_defined nodes
-   avail lists: 1:9,2:11722,3:340,4:187,5:47,6:51,7:2374,8:8,9:797,10:12,11:55
- 36490 multiletter control sequences out of 65536+600000
- 104 fonts using 81326151 bytes
- 119i,11n,112p,1802b,481s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/Windows/Fonts/CENTURY.TTF><c:/Windows/Fonts/msmincho.ttc><c:/Windows/Fonts/arial.ttf><c:/Windows/Fonts/msgothic.ttc><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on report.pdf (1 page, 214627 bytes).
+ 1258 words of node memory still in use:
+   10 hlist, 2 vlist, 5 rule, 3 glue, 4 kern, 1 penalty, 1 glyph, 291 attribute, 55 glue_spec, 38 attribute_list, 1 write, 13 user_defined nodes
+   avail lists: 1:8,2:24799,3:515,4:246,5:46,6:62,7:4140,8:1,9:1743,10:23,11:24
+ 36494 multiletter control sequences out of 65536+600000
+ 111 fonts using 90135567 bytes
+ 119i,16n,112p,1802b,556s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/Windows/Fonts/CENTURY.TTF><c:/Windows/Fonts/msmincho.ttc><c:/Windows/Fonts/msgothic.ttc><c:/Windows/Fonts/arial.ttf>
+Output written on report.pdf (1 page, 207525 bytes).
 
-PDF statistics: 52 PDF objects out of 1000 (max. 8388607)
- 32 compressed objects within 1 object stream
+PDF statistics: 36 PDF objects out of 1000 (max. 8388607)
+ 20 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
