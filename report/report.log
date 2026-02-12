@@ -1,15 +1,15 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.8.14)  12 FEB 2026 15:30
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.8.14)  13 FEB 2026 03:10
  restricted system commands enabled.
  file:line:error style messages enabled.
-**c:/Users/dubia/Desktop/SPCC_BLDC/report/report.tex
-(c:/Users/dubia/Desktop/SPCC_BLDC/report/report.tex
+**c:/Users/yosaha/Desktop/SPCC_BLDC/report/report.tex
+(c:/Users/yosaha/Desktop/SPCC_BLDC/report/report.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-20>
 Lua module: luaotfload 2024-12-03 v3.29 Lua based OpenType font support
 Lua module: lualibs 2023-07-13 v2.76 ConTeXt Lua standard libraries.
 Lua module: lualibs-extended 2023-07-13 v2.76 ConTeXt Lua libraries -- extended collection.
-luaotfload | conf : Root cache directory is "C:/texlive/2025/texmf-var/luatex-cache/generic/names".
-luaotfload | init : Loading fontloader "fontloader-2023-12-28.lua" from kpse-resolved path "c:/texlive/2025/texmf-dist/tex/luatex/luaotfload/fontloader-2023-12-28.lua".
+luaotfload | conf : Root cache directory is "E:/texlive/2025/texmf-var/luatex-cache/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2023-12-28.lua" from kpse-resolved path "e:/texlive/2025/texmf-dist/tex/luatex/luaotfload/fontloader-2023-12-28.lua".
 Lua-only attribute luaotfload@noligature = 1
 luaotfload | init : Context OpenType loader version 3.134
 Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
@@ -17,7 +17,7 @@ Inserting `luaotfload.node_processor' in `hpack_filter'.
 Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
 Inserting `luaotfload.define_font' in `define_font'.
 Lua-only attribute luaotfload_color_attribute = 2
-luaotfload | conf : Root cache directory is "C:/texlive/2025/texmf-var/luatex-cache/generic/names".
+luaotfload | conf : Root cache directory is "E:/texlive/2025/texmf-var/luatex-cache/generic/names".
 Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
 Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
 Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
@@ -35,45 +35,45 @@ Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
 Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
-Inserting `tracingstacklevels' in `input_level_string'. (c:/texlive/2025/texmf-dist/tex/luatex/luatexja/ltjsarticle.cls
+Inserting `tracingstacklevels' in `input_level_string'. (e:/texlive/2025/texmf-dist/tex/luatex/luatexja/ltjsarticle.cls
 Document Class: ltjsarticle 2025-05-26 ltjsclasses 
-(c:/texlive/2025/texmf-dist/tex/luatex/luatexja/luatexja.sty
+(e:/texlive/2025/texmf-dist/tex/luatex/luatexja/luatexja.sty
 Package: luatexja 2025-07-23 Japanese Typesetting with Lua(La)TeX
- (c:/texlive/2025/texmf-dist/tex/luatex/luatexja/luatexja-core.sty
+ (e:/texlive/2025/texmf-dist/tex/luatex/luatexja/luatexja-core.sty
 Package: luatexja-core 2023-10-07 Core of LuaTeX-ja
- (c:/texlive/2025/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+ (e:/texlive/2025/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (c:/texlive/2025/texmf-dist/tex/luatex/luatexbase/luatexbase.sty
+) (e:/texlive/2025/texmf-dist/tex/luatex/luatexbase/luatexbase.sty
 Package: luatexbase 2015/10/04 v1.3 luatexbase interface to LuaTeX 
- (c:/texlive/2025/texmf-dist/tex/luatex/ctablestack/ctablestack.sty
+ (e:/texlive/2025/texmf-dist/tex/luatex/ctablestack/ctablestack.sty
 Package: ctablestack 2015/10/01 v1.0 Catcode table stable support
 \@catcodetablestackcnt=\count273
 )
 \CatcodeTableOther=\catcodetable14
 \CatcodeTableExpl=\catcodetable15
-) (c:/texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+) (e:/texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-) (c:/texlive/2025/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+) (e:/texlive/2025/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (c:/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
+ (e:/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 \pdftexcmds@toks=\toks17
-) (c:/texlive/2025/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+) (e:/texlive/2025/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
- (c:/texlive/2025/texmf-dist/tex/generic/xkeyval/xkeyval.tex (c:/texlive/2025/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+ (e:/texlive/2025/texmf-dist/tex/generic/xkeyval/xkeyval.tex (e:/texlive/2025/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks18
 \XKV@tempa@toks=\toks19
- (c:/texlive/2025/texmf-dist/tex/generic/xkeyval/keyval.tex))
+ (e:/texlive/2025/texmf-dist/tex/generic/xkeyval/keyval.tex))
 \XKV@depth=\count274
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-)) (c:/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+)) (e:/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count275
-) (c:/texlive/2025/texmf-dist/tex/latex/everyhook/everyhook.sty (c:/texlive/2025/texmf-dist/tex/latex/svn-prov/svn-prov.sty
+) (e:/texlive/2025/texmf-dist/tex/latex/everyhook/everyhook.sty (e:/texlive/2025/texmf-dist/tex/latex/svn-prov/svn-prov.sty
 Package: svn-prov 2010/04/24 v3.1862 Package Date/Version from SVN Keywords
 )
 Package: everyhook 2014/11/26 v1.2 (SVN Rev: 12)\ Hooks for low level TeX everyX primitives.
@@ -202,7 +202,7 @@ Inserting `ltj.set_stack_level' in `hpack_filter'.
 Inserting `luaotfload.node_processor' in `hpack_filter'.
 Inserting `ltj.main' in `hpack_filter'.
 Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
-Inserting `ltj.create_dir_whatsit' in `hpack_filter'. (c:/texlive/2025/texmf-dist/tex/luatex/luatexja/ltj-base.sty
+Inserting `ltj.create_dir_whatsit' in `hpack_filter'. (e:/texlive/2025/texmf-dist/tex/luatex/luatexja/ltj-base.sty
 Package: ltj-base 2021-03-16
 \ltj@tempcntb=\count280
 \ltj@tempcntc=\count281
@@ -237,12 +237,12 @@ Package: ltj-base 2021-03-16
 \ltj@@lua@unboxcheckdir@inner=\luafunction55
 \ltj@@lua@uncopycheckdir@inner=\luafunction56
 \ltj@@lua@uncopy@restore@whatsit@inner=\luafunction57
-(load cache: ltj-kinsoku_default.luc) (c:/texlive/2025/texmf-dist/tex/luatex/luatexja/ltj-latex.sty
+(load cache: ltj-kinsoku_default.luc) (e:/texlive/2025/texmf-dist/tex/luatex/luatexja/ltj-latex.sty
 Package: ltj-latex 2025-06-08 LaTeX support of LuaTeX-ja
-Inserting `ltj.direction' in `pre_shipout_filter'. (c:/texlive/2025/texmf-dist/tex/luatex/luatexja/patches/lltjfont.sty
+Inserting `ltj.direction' in `pre_shipout_filter'. (e:/texlive/2025/texmf-dist/tex/luatex/luatexja/patches/lltjfont.sty
 Package: lltjfont 2023-05-16 Patch to NFSS2 for LuaTeX-ja
 \ltj@@latex@plv=\count282
- (c:/texlive/2025/texmf-dist/tex/latex/base/tuenc.def
+ (e:/texlive/2025/texmf-dist/tex/latex/base/tuenc.def
 File: tuenc.def 2024/12/21 v2.1c Standard LaTeX file
 \@remove@tlig@@@=\luafunction58
 LaTeX Font Info:    Redeclaring font encoding TU on input line 105.
@@ -434,25 +434,25 @@ LaTeX Info: Redefining \fontshapeforce on input line 789.
 \ltj@@jfont@@jfmonly@@inner=\luafunction69
 \ltj@@does@alt@set@@inner=\luafunction70
 \ltj@@cipath@clear@inner=\luafunction71
-) (c:/texlive/2025/texmf-dist/tex/luatex/luatexja/patches/lltjdefs.sty
+) (e:/texlive/2025/texmf-dist/tex/luatex/luatexja/patches/lltjdefs.sty
 Package: lltjdefs 2024-05-16 Default font settings of LuaTeX-ja
-luaotfload | db : Font names database loaded from C:/texlive/2025/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz(load cache: extra_lmroman10-regular.luc)
+luaotfload | db : Font names database loaded from E:/texlive/2025/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz(load cache: extra_lmroman10-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
 (Font)              scaled to size 9.24713pt on input line 69.
 
-(c:/texlive/2025/texmf-dist/tex/luatex/luatexja/jfm-ujisv.lua)
+(e:/texlive/2025/texmf-dist/tex/luatex/luatexja/jfm-ujisv.lua)
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
 (Font)              scaled to size 9.24713pt on input line 69.
 (load cache: extra_haranoajimincho-regular.luc)
-(c:/texlive/2025/texmf-dist/tex/luatex/luatexja/jfm-ujis.lua)
+(e:/texlive/2025/texmf-dist/tex/luatex/luatexja/jfm-ujis.lua)
 \symmincho=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
 (Font)                  JY3/mc/m/n --> JY3/gt/m/n on input line 78.
-) (c:/texlive/2025/texmf-dist/tex/luatex/luatexja/patches/lltjcore.sty
+) (e:/texlive/2025/texmf-dist/tex/luatex/luatexja/patches/lltjcore.sty
 Package: lltjcore 2025-06-12 Patch to LaTeX2e Kernel for LuaTeX-ja (for LaTeX2e >=2025-06-01)
- (c:/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
+ (e:/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2025-07-20 L3 programming layer (loader) 
- (c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-luatex.def
+ (e:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-luatex.def
 File: l3backend-luatex.def 2025-06-09 L3 backend support: PDF output (LuaTeX)
 \l__color_backend_stack_int=\count283
 Inserting `l3color' in `luaotfload.parse_color'.))
@@ -475,21 +475,21 @@ Inserting `l3color' in `luaotfload.parse_color'.))
 \@@paperwidth=\dimen164
 \@@topmargin=\dimen165
 LaTeX Info: Redefining \underline on input line 300.
-) (c:/texlive/2025/texmf-dist/tex/luatex/luatexja/patches/lltjp-atbegshi.sty
+) (e:/texlive/2025/texmf-dist/tex/luatex/luatexja/patches/lltjp-atbegshi.sty
 Package: lltjp-atbegshi 2024-05-14 Patching \shipout hooks for LuaTeX-ja
 \l__platex_shipout_dummy_box=\box69
-) (c:/texlive/2025/texmf-dist/tex/luatex/luatexja/patches/lltjp-geometry.sty
+) (e:/texlive/2025/texmf-dist/tex/luatex/luatexja/patches/lltjp-geometry.sty
 Package: lltjp-geometry 2024-05-16 Patch to geometry for LuaTeX-ja with vertical writing mode
- (c:/texlive/2025/texmf-dist/tex/generic/iftex/ifluatex.sty
+ (e:/texlive/2025/texmf-dist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 )))
 \ltj@temp@cctb=\catcodetable16
-) (c:/texlive/2025/texmf-dist/tex/luatex/luatexja/luatexja-compat.sty
+) (e:/texlive/2025/texmf-dist/tex/luatex/luatexja/luatexja-compat.sty
 Package: luatexja-compat 2020-08-08 Compatibility with pTeX
 (load cache: ltj-jisx0208.luc)
 \hour=\count284
 \minute=\count285
-)) (c:/texlive/2025/texmf-dist/tex/latex/base/fleqn.clo
+)) (e:/texlive/2025/texmf-dist/tex/latex/base/fleqn.clo
 File: fleqn.clo 2016/12/29 v1.2b Standard LaTeX option (flush left equations)
 \mathindent=\skip49
 Applying: [2015/01/01] Make \[ robust on input line 50.
@@ -526,22 +526,22 @@ LaTeX Info: Redefining \gt on input line 1214.
 \jsc@tocl@width=\dimen169
 \@lnumwidth=\dimen170
 \bibindent=\dimen171
- (c:/texlive/2025/texmf-dist/tex/platex/jsclasses/jslogo.sty
+ (e:/texlive/2025/texmf-dist/tex/platex/jsclasses/jslogo.sty
 Package: jslogo 2019/07/25 okumura, texjporg
 LaTeX Info: Redefining \TeX on input line 82.
 LaTeX Info: Redefining \LaTeX on input line 135.
 LaTeX Info: Redefining \LaTeXe on input line 188.
 )
 \heisei=\count294
-) (c:/texlive/2025/texmf-dist/tex/luatex/luatexja/addons/luatexja-fontspec.sty
+) (e:/texlive/2025/texmf-dist/tex/luatex/luatexja/addons/luatexja-fontspec.sty
 Package: luatexja-fontspec 2024-05-14 fontspec support of LuaTeX-ja
- (c:/texlive/2025/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+ (e:/texlive/2025/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
-) (c:/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.sty (c:/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+) (e:/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.sty (e:/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2024-08-16 L3 Experimental document command parser
 )
 Package: fontspec 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
-Lua module: fontspec 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX (c:/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
+Lua module: fontspec 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX (e:/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
 Package: fontspec-luatex 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
 \l__fontspec_script_int=\count295
 \l__fontspec_language_int=\count296
@@ -557,9 +557,9 @@ Package: fontspec-luatex 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTe
 \l__fontspec_tmpa_dim=\dimen172
 \l__fontspec_tmpb_dim=\dimen173
 \l__fontspec_tmpc_dim=\dimen174
- (c:/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
+ (e:/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
-) (c:/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.cfg)(load cache: extra_lmroman10-bold.luc)
+) (e:/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.cfg)(load cache: extra_lmroman10-bold.luc)
 LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <10> not available
 (Font)              Font shape `JT3/gt/m/n' tried instead on input line 3978.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
@@ -568,12 +568,12 @@ LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <10> not available
 (Font)              Font shape `JY3/gt/m/n' tried instead on input line 3978.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 (Font)              scaled to size 9.24713pt on input line 3978.
-(load cache: extra_haranoajigothic-medium.luc))) (c:/texlive/2025/texmf-dist/tex/luatex/luatexja/patches/lltjp-fontspec.sty) (c:/texlive/2025/texmf-dist/tex/luatex/luatexja/addons/luatexja-fontspec-29e.sty
+(load cache: extra_haranoajigothic-medium.luc))) (e:/texlive/2025/texmf-dist/tex/luatex/luatexja/patches/lltjp-fontspec.sty) (e:/texlive/2025/texmf-dist/tex/luatex/luatexja/addons/luatexja-fontspec-29e.sty
 Package: luatexja-fontspec-29e 2024-07-23 fontspec support of LuaTeX-ja
 \g__ltj_fontspec_altnumber_int=\count306
-)) (c:/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
+)) (e:/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (c:/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
+ (e:/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
 \Gm@cnth=\count307
@@ -588,36 +588,36 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layouthoffset=\dimen181
 \Gm@layoutvoffset=\dimen182
 \Gm@dimlist=\toks27
-) (c:/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
+) (e:/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
- (c:/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
+ (e:/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
- (c:/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty
+ (e:/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (e:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: luatex.def on input line 106.
- (c:/texlive/2025/texmf-dist/tex/latex/graphics-def/luatex.def
+ (e:/texlive/2025/texmf-dist/tex/latex/graphics-def/luatex.def
 File: luatex.def 2024/04/13 v1.2e Graphics/color driver for luatex
 ))
 \Gin@req@height=\dimen183
 \Gin@req@width=\dimen184
-) (c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (e:/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2025/06/16 v2.17y AMS math features
 \@mathmargin=\skip53
 
 For additional information on amsmath, use the `?' option.
-(c:/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
+(e:/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2024/11/17 v2.01 AMS text
- (c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty
+ (e:/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks28
 \ex@=\dimen185
-)) (c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
+)) (e:/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen186
-) (c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
+) (e:/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count310
@@ -667,26 +667,26 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \mathdisplay@stack=\toks32
 LaTeX Info: Redefining \[ on input line 2949.
 LaTeX Info: Redefining \] on input line 2950.
-) (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/amssymb.sty
+) (e:/texlive/2025/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+ (e:/texlive/2025/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup5
 \symAMSb=\mathgroup6
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (c:/texlive/2025/texmf-dist/tex/latex/url/url.sty
+)) (e:/texlive/2025/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-) (c:/texlive/2025/texmf-dist/tex/latex/here/here.sty) (c:/texlive/2025/texmf-dist/tex/latex/float/float.sty
+) (e:/texlive/2025/texmf-dist/tex/latex/here/here.sty) (e:/texlive/2025/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count322
 \float@exts=\toks33
 \float@box=\box73
 \@float@everytoks=\toks34
 \@floatcapt=\box74
-) (c:/texlive/2025/texmf-dist/tex/latex/sttools/flushend.sty
+) (e:/texlive/2025/texmf-dist/tex/latex/sttools/flushend.sty
 Package: flushend 2025/06/18 v4.3 Balancing columns in twocolumn mode (ST)
 \flushend@@lastskip@a=\skip56
 \flushend@@lastskip@b=\skip57
@@ -707,47 +707,40 @@ Package: flushend 2025/06/18 v4.3 Balancing columns in twocolumn mode (ST)
 \atColsBreak=\toks35
 \atColsEnd=\toks36
 \oldbreak@skip=\dimen198
+) (e:/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen199
+\lightrulewidth=\dimen256
+\cmidrulewidth=\dimen257
+\belowrulesep=\dimen258
+\belowbottomsep=\dimen259
+\aboverulesep=\dimen260
+\abovetopsep=\dimen261
+\cmidrulesep=\dimen262
+\cmidrulekern=\dimen263
+\defaultaddspace=\dimen264
+\@cmidla=\count325
+\@cmidlb=\count326
+\@aboverulesep=\dimen265
+\@belowrulesep=\dimen266
+\@thisruleclass=\count327
+\@lastruleclass=\count328
+\@thisrulewidth=\dimen267
 )
-luaotfload | cache : Lookup cache loaded from C:/texlive/2025/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.(load cache: extra_century.luc)
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "Century/BI" (it probably
-(fontspec)             doesn't exist).
-
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "Century/B" (it probably doesn't
-(fontspec)             exist).
-
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "Century/I" (it probably doesn't
-(fontspec)             exist).
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'Century(0)' created for font 'Century'
-(fontspec)             with options [Ligatures=TeX].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"name:Century:mode=node;language=dflt;+tlig;"
-
-(load cache: extra_ms-mincho.luc)
+luaotfload | cache : Lookup cache loaded from E:/texlive/2025/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.(load cache: extra_ms-mincho.luc)
 
 Package fontspec Info: 
 (fontspec)             MS Mincho scale = 0.924715.
 
+(load cache: extra_ms-gothic.luc)
 
 Package fontspec Info: 
-(fontspec)             Could not resolve font "MS Mincho/BI" (it probably
+(fontspec)             Could not resolve font "MS Gothic/I" (it probably
 (fontspec)             doesn't exist).
 
 
 Package fontspec Info: 
-(fontspec)             Could not resolve font "MS Mincho/B" (it probably
+(fontspec)             Could not resolve font "MS Mincho/BI" (it probably
 (fontspec)             doesn't exist).
 
 
@@ -765,48 +758,34 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Font family 'MSMincho(0)' created for font 'MS Mincho'
-(fontspec)             with options
-(fontspec)             [YokoFeatures={JFM=ujis},TateFeatures={JFM=ujisv},Scale=0.924715,Kerning=Off,Script=CJK].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
+(fontspec)             MS Gothic scale = 0.924715.
 
-LaTeX Font Info:    Redeclaring symbol font `mincho' on input line 21.
-LaTeX Font Info:    Overwriting symbol font `mincho' in version `normal'
-(Font)                  JY3/mc/m/n --> JY3/MSMincho(0)/m/n on input line 21.
-LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
-(Font)                  JY3/gt/m/n --> JY3/MSMincho(0)/m/n on input line 21.
-LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
-(Font)                  JY3/MSMincho(0)/m/n --> JY3/MSMincho(0)/b/n on input line 21.
-LaTeX Font Info:    Font shape `JT3/MSMincho(0)/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 21.
-LaTeX Font Info:    Font shape `JY3/MSMincho(0)/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 21.
-(load cache: extra_arialmt.luc)(load cache: extra_arialnarrow-bolditalic.luc)(load cache: extra_arial-boldmt.luc)(load cache: extra_arialnarrow-italic.luc)
 
 Package fontspec Info: 
-(fontspec)             Font family 'Arial(0)' created for font 'Arial' with
-(fontspec)             options [Ligatures=TeX].
+(fontspec)             MS Gothic scale = 0.924715.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'MSMincho(0)' created for font 'MS Mincho'
+(fontspec)             with options
+(fontspec)             [YokoFeatures={JFM=ujis},TateFeatures={JFM=ujisv},Scale=0.924715,Kerning=Off,Script=CJK,BoldFont
+(fontspec)             = MS Gothic].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"name:Arial:mode=node;script=latn;language=dflt;+tlig;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->"name:Arial:mode=node;script=latn;language=dflt;+tlig;+smcp;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->"name:Arial/B:mode=node;script=latn;language=dflt;+tlig;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->"name:Arial/B:mode=node;script=latn;language=dflt;+tlig;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->"name:Arial/I:mode=node;script=latn;language=dflt;+tlig;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->"name:Arial/BI:mode=node;script=latn;language=dflt;+tlig;"
 
-(load cache: extra_ms-gothic.luc)
+LaTeX Font Info:    Redeclaring symbol font `mincho' on input line 22.
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `normal'
+(Font)                  JY3/mc/m/n --> JY3/MSMincho(0)/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY3/gt/m/n --> JY3/MSMincho(0)/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY3/MSMincho(0)/m/n --> JY3/MSMincho(0)/b/n on input line 22.
+LaTeX Font Info:    Font shape `JT3/MSMincho(0)/m/n' will be
+(Font)              scaled to size 9.24713pt on input line 22.
+LaTeX Font Info:    Font shape `JY3/MSMincho(0)/m/n' will be
+(Font)              scaled to size 9.24713pt on input line 22.
 
 Package fontspec Info: 
 (fontspec)             MS Gothic scale = 0.924715.
@@ -844,34 +823,140 @@ Package fontspec Info:
 (fontspec)             series/shapes:
 (fontspec)              
 
-LaTeX Font Info:    Redeclaring math alphabet \mathgt on input line 26.
+LaTeX Font Info:    Redeclaring math alphabet \mathgt on input line 25.
 LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `normal'
-(Font)                  JY3/gt/m/n --> JY3/MSGothic(0)/m/n on input line 26.
+(Font)                  JY3/gt/m/n --> JY3/MSGothic(0)/m/n on input line 25.
 LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `bold'
-(Font)                  JY3/gt/m/n --> JY3/MSGothic(0)/m/n on input line 26.
+(Font)                  JY3/gt/m/n --> JY3/MSGothic(0)/m/n on input line 25.
+(load cache: extra_century.luc)
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "Century/BI" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "Century/B" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "Century/I" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'Century(0)' created for font 'Century'
+(fontspec)             with options [Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"name:Century:mode=node;language=dflt;+tlig;"
+
+
+Package fontspec Info: 
+(fontspec)             MS Mincho scale = 0.924715.
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "MS Mincho/BI" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "MS Mincho/B" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "MS Mincho/I" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             MS Mincho scale = 0.924715.
+
+
+Package fontspec Info: 
+(fontspec)             MS Mincho scale = 0.924715.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'MSMincho(1)' created for font 'MS Mincho'
+(fontspec)             with options
+(fontspec)             [YokoFeatures={JFM=ujis},TateFeatures={JFM=ujisv},Scale=0.924715,Kerning=Off,Script=CJK].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+
+LaTeX Font Info:    Redeclaring symbol font `mincho' on input line 34.
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `normal'
+(Font)                  JY3/MSMincho(0)/m/n --> JY3/MSMincho(1)/m/n on input line 34.
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY3/MSMincho(0)/b/n --> JY3/MSMincho(1)/m/n on input line 34.
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY3/MSMincho(1)/m/n --> JY3/MSMincho(1)/b/n on input line 34.
+LaTeX Font Info:    Font shape `JT3/MSMincho(1)/m/n' will be
+(Font)              scaled to size 9.24713pt on input line 34.
+LaTeX Font Info:    Font shape `JY3/MSMincho(1)/m/n' will be
+(Font)              scaled to size 9.24713pt on input line 34.
+(load cache: extra_arialmt.luc)(load cache: extra_arialnarrow-bolditalic.luc)(load cache: extra_arial-boldmt.luc)(load cache: extra_arialnarrow-italic.luc)
+
+Package fontspec Info: 
+(fontspec)             Font family 'Arial(0)' created for font 'Arial' with
+(fontspec)             options [Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"name:Arial:mode=node;script=latn;language=dflt;+tlig;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->"name:Arial:mode=node;script=latn;language=dflt;+tlig;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"name:Arial/B:mode=node;script=latn;language=dflt;+tlig;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->"name:Arial/B:mode=node;script=latn;language=dflt;+tlig;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"name:Arial/I:mode=node;script=latn;language=dflt;+tlig;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"name:Arial/BI:mode=node;script=latn;language=dflt;+tlig;"
+
+
+Package fontspec Info: 
+(fontspec)             MS Gothic scale = 0.924715.
+
+LaTeX Font Info:    Redeclaring math alphabet \mathgt on input line 39.
+LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `normal'
+(Font)                  JY3/MSGothic(0)/m/n --> JY3/MSGothic(0)/m/n on input line 39.
+LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `bold'
+(Font)                  JY3/MSGothic(0)/m/n --> JY3/MSGothic(0)/m/n on input line 39.
  (./report.aux)
 \openout1 = report.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
 
 Package fontspec Info: 
 (fontspec)             Adjusting the maths setup (use [no-math] to avoid
@@ -879,56 +964,56 @@ Package fontspec Info:
 
 \symlegacymaths=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 101.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 101.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 101.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 101.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 101.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 101.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 101.
-LaTeX Font Info:    Redeclaring math accent \check on input line 101.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 101.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 101.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 101.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 101.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 101.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 101.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 101.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 101.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 101.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 101.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 101.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 101.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 101.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 101.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 101.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 101.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 114.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 114.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 114.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 114.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 114.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 114.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 114.
+LaTeX Font Info:    Redeclaring math accent \check on input line 114.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 114.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 114.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 114.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 114.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 114.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 114.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 114.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 114.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 114.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 114.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 114.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 114.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 114.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 114.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 114.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 114.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 101.
+(Font)              `operators' in the math version `normal' on input line 114.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/Century(0)/m/n on input line 101.
+(Font)                  OT1/cmr/m/n --> TU/Century(0)/m/n on input line 114.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 101.
+(Font)              `operators' in the math version `bold' on input line 114.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/Century(0)/m/n on input line 101.
+(Font)                  OT1/cmr/bx/n --> TU/Century(0)/m/n on input line 114.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/Century(0)/m/n --> TU/Century(0)/m/n on input line 101.
+(Font)                  TU/Century(0)/m/n --> TU/Century(0)/m/n on input line 114.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/Century(0)/m/it on input line 101.
+(Font)                  OT1/cmr/m/it --> TU/Century(0)/m/it on input line 114.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/Century(0)/b/n on input line 101.
+(Font)                  OT1/cmr/bx/n --> TU/Century(0)/b/n on input line 114.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/Arial(0)/m/n on input line 101.
+(Font)                  OT1/cmss/m/n --> TU/Arial(0)/m/n on input line 114.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 101.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 114.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/Century(0)/m/n --> TU/Century(0)/b/n on input line 101.
+(Font)                  TU/Century(0)/m/n --> TU/Century(0)/b/n on input line 114.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/Century(0)/b/it on input line 101.
+(Font)                  OT1/cmr/bx/it --> TU/Century(0)/b/it on input line 114.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/Arial(0)/b/n on input line 101.
+(Font)                  OT1/cmss/bx/n --> TU/Arial(0)/b/n on input line 114.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 101.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 114.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -964,355 +1049,153 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(e:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count325
-\scratchdimen=\dimen199
+\scratchcounter=\count329
+\scratchdimen=\dimen268
 \scratchbox=\box83
-\nofMPsegments=\count326
-\nofMParguments=\count327
+\nofMPsegments=\count330
+\nofMParguments=\count331
 \everyMPshowfont=\toks37
-\MPscratchCnt=\count328
-\MPscratchDim=\dimen256
-\MPnumerator=\count329
-\makeMPintoPDFobject=\count330
+\MPscratchCnt=\count332
+\MPscratchDim=\dimen269
+\MPnumerator=\count333
+\makeMPintoPDFobject=\count334
 \everyMPtoPDFconversion=\toks38
-) (c:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+) (e:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (c:/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+ (e:/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Font Info:    Font shape `JT3/MSMincho(0)/m/n' will be
-(Font)              scaled to size 15.97903pt on input line 103.
-LaTeX Font Info:    Font shape `JY3/MSMincho(0)/m/n' will be
-(Font)              scaled to size 15.97903pt on input line 103.
+LaTeX Font Info:    Font shape `JT3/MSMincho(1)/m/n' will be
+(Font)              scaled to size 15.97903pt on input line 116.
+LaTeX Font Info:    Font shape `JY3/MSMincho(1)/m/n' will be
+(Font)              scaled to size 15.97903pt on input line 116.
 LaTeX Font Info:    Font shape `JT3/MSGothic(0)/m/n' will be
-(Font)              scaled to size 15.97903pt on input line 103.
+(Font)              scaled to size 15.97903pt on input line 116.
 LaTeX Font Info:    Font shape `JY3/MSGothic(0)/m/n' will be
-(Font)              scaled to size 15.97903pt on input line 103.
+(Font)              scaled to size 15.97903pt on input line 116.
 LaTeX Font Info:    Font shape `JT3/MSGothic(0)/m/n' will be
-(Font)              scaled to size 12.99452pt on input line 103.
+(Font)              scaled to size 12.99452pt on input line 116.
 LaTeX Font Info:    Font shape `JY3/MSGothic(0)/m/n' will be
-(Font)              scaled to size 12.99452pt on input line 103.
-LaTeX Font Info:    Font shape `JT3/MSMincho(0)/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 103.
-LaTeX Font Info:    Font shape `JY3/MSMincho(0)/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 103.
-LaTeX Font Info:    Font shape `JY3/MSMincho(0)/m/n' will be
-(Font)              scaled to size 7.3977pt on input line 103.
-LaTeX Font Info:    Font shape `JY3/MSMincho(0)/m/n' will be
-(Font)              scaled to size 5.54828pt on input line 103.
-LaTeX Font Info:    Trying loading font information for U+msa on input line 103.
- (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
+(Font)              scaled to size 12.99452pt on input line 116.
+LaTeX Font Info:    Font shape `JT3/MSMincho(1)/m/n' will be
+(Font)              scaled to size 11.09656pt on input line 116.
+LaTeX Font Info:    Font shape `JY3/MSMincho(1)/m/n' will be
+(Font)              scaled to size 11.09656pt on input line 116.
+LaTeX Font Info:    Font shape `JY3/MSMincho(1)/m/n' will be
+(Font)              scaled to size 7.3977pt on input line 116.
+LaTeX Font Info:    Font shape `JY3/MSMincho(1)/m/n' will be
+(Font)              scaled to size 5.54828pt on input line 116.
+LaTeX Font Info:    Trying loading font information for U+msa on input line 116.
+ (e:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying loading font information for U+msb on input line 103.
- (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
+LaTeX Font Info:    Trying loading font information for U+msb on input line 116.
+ (e:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Font shape `JT3/MSMincho(0)/m/n' will be
-(Font)              scaled to size 9.2818pt on input line 103.
-LaTeX Font Info:    Font shape `JY3/MSMincho(0)/m/n' will be
-(Font)              scaled to size 9.2818pt on input line 103.
-LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 103.
-LaTeX Font Info:    Font shape `JY3/MSMincho(0)/m/n' will be
-(Font)              scaled to size 6.49721pt on input line 103.
-LaTeX Font Info:    Font shape `JY3/MSMincho(0)/m/n' will be
-(Font)              scaled to size 4.64088pt on input line 103.
+LaTeX Font Info:    Font shape `JT3/MSMincho(1)/m/n' will be
+(Font)              scaled to size 9.2818pt on input line 116.
+LaTeX Font Info:    Font shape `JY3/MSMincho(1)/m/n' will be
+(Font)              scaled to size 9.2818pt on input line 116.
+LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 116.
+LaTeX Font Info:    Font shape `JY3/MSMincho(1)/m/n' will be
+(Font)              scaled to size 6.49721pt on input line 116.
+LaTeX Font Info:    Font shape `JY3/MSMincho(1)/m/n' will be
+(Font)              scaled to size 4.64088pt on input line 116.
 
-Overfull \hbox (12.00002pt too wide) in paragraph at lines 103--103
+Overfull \hbox (12.00002pt too wide) in paragraph at lines 116--116
  [][][][] 
  []
 
-LaTeX Font Info:    Font shape `JY3/MSMincho(0)/m/n' will be
-(Font)              scaled to size 6.47299pt on input line 105.
-LaTeX Font Info:    Font shape `JY3/MSMincho(0)/m/n' will be
-(Font)              scaled to size 4.62357pt on input line 105.
-LaTeX Font Info:    Font shape `JT3/MSMincho(0)/m/n' will be
-(Font)              scaled to size 6.47299pt on input line 105.
-LaTeX Font Info:    Font shape `JT3/MSMincho(0)/m/n' will be
-(Font)              scaled to size 6.96135pt on input line 105.
-LaTeX Font Info:    Font shape `JY3/MSMincho(0)/m/n' will be
-(Font)              scaled to size 6.96135pt on input line 105.
+LaTeX Font Info:    Font shape `JY3/MSMincho(1)/m/n' will be
+(Font)              scaled to size 6.47299pt on input line 118.
+LaTeX Font Info:    Font shape `JY3/MSMincho(1)/m/n' will be
+(Font)              scaled to size 4.62357pt on input line 118.
+LaTeX Font Info:    Font shape `JT3/MSMincho(1)/m/n' will be
+(Font)              scaled to size 6.47299pt on input line 118.
+LaTeX Font Info:    Font shape `JT3/MSMincho(1)/m/n' will be
+(Font)              scaled to size 6.96135pt on input line 118.
+LaTeX Font Info:    Font shape `JY3/MSMincho(1)/m/n' will be
+(Font)              scaled to size 6.96135pt on input line 118.
 LaTeX Font Info:    Font shape `JT3/MSGothic(0)/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 112.
+(Font)              scaled to size 9.24713pt on input line 125.
 LaTeX Font Info:    Font shape `JY3/MSGothic(0)/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 112.
+(Font)              scaled to size 9.24713pt on input line 125.
 LaTeX Font Info:    Font shape `JT3/MSGothic(0)/m/n' will be
-(Font)              scaled to size 9.2818pt on input line 112.
+(Font)              scaled to size 9.2818pt on input line 125.
 LaTeX Font Info:    Font shape `JY3/MSGothic(0)/m/n' will be
-(Font)              scaled to size 9.2818pt on input line 112.
-<./figure/stater.png, id=1, 601.4972pt x 575.14874pt>
+(Font)              scaled to size 9.2818pt on input line 125.
+<./figure/BLDC_2.png, id=1, 424.58624pt x 350.81062pt>
+File: ./figure/BLDC_2.png Graphic file (type png)
+<use ./figure/BLDC_2.png>
+Package luatex.def Info: ./figure/BLDC_2.png  used on input line 140.
+(luatex.def)             Requested size: 111.98904pt x 92.53078pt.
+LaTeX Font Info:    Font shape `JT3/MSMincho(1)/m/n' will be
+(Font)              scaled to size 8.32242pt on input line 141.
+LaTeX Font Info:    Font shape `JY3/MSMincho(1)/m/n' will be
+(Font)              scaled to size 8.32242pt on input line 141.
+<./figure/BLDC_1.png, id=2, 424.58624pt x 351.56343pt>
+File: ./figure/BLDC_1.png Graphic file (type png)
+<use ./figure/BLDC_1.png>
+Package luatex.def Info: ./figure/BLDC_1.png  used on input line 148.
+(luatex.def)             Requested size: 111.98904pt x 92.72934pt.
+<./figure/stater.png, id=3, 601.4972pt x 575.14874pt>
 File: ./figure/stater.png Graphic file (type png)
 <use ./figure/stater.png>
-Package luatex.def Info: ./figure/stater.png  used on input line 132.
-(luatex.def)             Requested size: 93.32361pt x 89.2349pt.
-LaTeX Font Info:    Font shape `JT3/MSMincho(0)/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 133.
-LaTeX Font Info:    Font shape `JY3/MSMincho(0)/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 133.
+Package luatex.def Info: ./figure/stater.png  used on input line 164.
+(luatex.def)             Requested size: 128.32263pt x 122.69797pt.
 
 
-
-c:/Users/dubia/Desktop/SPCC_BLDC/report/report.tex:139: LaTeX Error: \mathrm allowed only in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.139 12 \times 10 \times 5\, \mathrm
-                                     {mm} のネオジム磁石を用いた極...
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-<./figure/rotor.png, id=2, 550.30594pt x 468.24937pt>
+<./figure/rotor.png, id=4, 550.30594pt x 468.24937pt>
 File: ./figure/rotor.png Graphic file (type png)
 <use ./figure/rotor.png>
-Package luatex.def Info: ./figure/rotor.png  used on input line 152.
-(luatex.def)             Requested size: 93.32361pt x 79.40842pt.
+Package luatex.def Info: ./figure/rotor.png  used on input line 184.
+(luatex.def)             Requested size: 128.32263pt x 109.18837pt.
 
 
-[1{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+[1{e:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
-<./figure/stater.png><./figure/rotor.png>]
+<./figure/BLDC_2.png><./figure/BLDC_1.png><./figure/stater.png>]
 
 
 
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
-[leftcolumn badness]: 10000 on 147.18715pt
-[rightcolumn badness]: 1000000 on 147.18715pt
 - LAST -
-Extra skip:201.85817pt
-Left:200.74435pt/1.11382pt
-Right:0.0pt/0.0pt
-Split: 198.37218pt
-Output:198.37218pt
-Pageshrink: 0.0pt
-Pagestretch: 0.0pt
+Extra skip:0.0pt
+Left:524.29744pt/2.86108pt
+Right:537.93634pt/1.11382pt
+Split: 531.53639pt
+Output:531.53639pt
+Pageshrink: 5.19995pt
+Pagestretch: 48.40039pt
 @colht:731.23584pt
-FLUSHEND [output]: 198.37218pt
-FLUSHEND [leftcolumn badness]: 41
-FUSHEND [rightcolumn badness]: 10000
-[2] (./report.aux)
+FLUSHEND [output]: 531.53639pt
+FLUSHEND [leftcolumn badness]: 1
+FUSHEND [rightcolumn badness]: 2
+[2<./figure/rotor.png>] (./report.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-20>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 )
 
 Here is how much of LuaTeX's memory you used:
- 8365 strings out of 470118
- 244637,794899 words of node,token memory allocated
- 3448 words of node memory still in use:
-   10 hlist, 2 vlist, 5 rule, 4 glue, 4 kern, 1 penalty, 1 glyph, 1290 attribute, 56 glue_spec, 128 attribute_list, 1 write, 13 user_defined nodes
-   avail lists: 1:12,2:60654,3:507,4:298,5:55,6:42,7:6941,8:8,9:3132,10:23,11:26
- 36545 multiletter control sequences out of 65536+600000
- 128 fonts using 103550679 bytes
- 119i,16n,112p,1802b,556s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/Windows/Fonts/CENTURY.TTF><c:/Windows/Fonts/msmincho.ttc><c:/Windows/Fonts/msgothic.ttc><c:/Windows/Fonts/arial.ttf><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on report.pdf (2 pages, 431613 bytes).
+ 8480 strings out of 470118
+ 244640,794899 words of node,token memory allocated
+ 4027 words of node memory still in use:
+   13 hlist, 2 vlist, 28 rule, 31 glue, 4 kern, 3 penalty, 26 glyph, 1274 attribute, 57 glue_spec, 127 attribute_list, 1 write, 14 user_defined nodes
+   avail lists: 1:13,2:60791,3:597,4:514,5:67,6:76,7:6774,8:15,9:3024,10:23,11:26
+ 36649 multiletter control sequences out of 65536+600000
+ 128 fonts using 103556119 bytes
+ 119i,16n,112p,1803b,556s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/Windows/Fonts/CENTURY.TTF><c:/Windows/Fonts/msmincho.ttc><c:/Windows/Fonts/msgothic.ttc><c:/Windows/Fonts/arial.ttf><e:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><e:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><e:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><e:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><e:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><e:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><e:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><e:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on report.pdf (2 pages, 617179 bytes).
 
-PDF statistics: 59 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+PDF statistics: 79 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -9,6 +9,19 @@
 \usepackage{url}
 \usepackage{here}
 \usepackage{flushend}
+\usepackage{booktabs} % 表の罫線を太く・美しくする
+
+% --- フォント設定 (LuaLaTeX用) ---
+\usepackage{luatexja-fontspec} % これが必要
+
+% メインの日本語フォント（明朝）を設定
+% BoldFont = MS Gothic とすることで、太字の時だけゴシックに切り替わる
+\setmainjfont[
+    BoldFont = MS Gothic
+]{MS Mincho}
+
+% \sffamily (サンセリフ体) も念のためMSゴシックにしておく
+\setsansjfont{MS Gothic}
 
 
 % --- レイアウト設定 ---
@@ -113,49 +126,114 @@
 近年，ロボット業界でブラシレスDCモーター(以下，BLDCモーター)を用いたアクチュエータの需要が高まっている．しかし，日本国内かつ個人で購入可能なBLDCモーターに限定すると選択肢が限定され，使用用途に対してトルク・回転数等が要求仕様を大きく上回っていたり，サイズが合わない等の問題が起きる．\\
 　このことから，プロジェクトに合った性能・サイズを持つBLDCモーターの製作が要求される．
 ここで課題となるのが，ステータの材料である．一般的なBLDCモーターでは残留磁力・保磁力が極めて低く，高透磁率・低鉄損である電磁鋼板を用いることが多いが，小ロットでの入手が困難である．
-本研究では小ロットを安価に入手可能な材料であるSPCC(冷延鋼板)を用いてBLDCモーターのステータを設計・試作し，トルクを測定することで実用性を評価する．
+本研究では性能では電磁鋼板には劣るものの，小ロットを安価に入手可能な材料であるSPCC(冷延鋼板)を用いてBLDCモーターのステータを設計・試作し，トルクを測定することで実用性を評価する．
 
 \section{BLDCモーターの設計}
-BLDCモーターには主に永久磁石が付いたロータがコイルより内側にあるインナーロータ方式と，コイルより外側にあるアウターロータ方式の2種類が存在する．減速機が無くてもトルクが出やすい後者の方がロボット業界では需要が高い．
-本研究では製作難易度とロボット業界での需要を踏まえ，アウターロータ方式のBLDCモーターを採用し，設計する．
-モデリングにはSolidWorksを使用する．
+BLDCモーターには主にロータがコイルより内側にあるインナーロータ方式と，コイルより外側にあるアウターロータ方式の2種類が存在する．減速機が無くてもトルクが出やすい後者の方がロボット業界では需要が高い．
+本研究では製作難易度とロボット業界での需要を踏まえ，アウターロータ方式のBLDCモーターを採用し，SolidWorksを用いて設計した．
+設計したBLDCモーターの全体像を\textgt{図\ref{fig:BLDC_top}}，\textgt{図\ref{fig:BLDC_bottom}}に示す
+\begin{figure}[H]
+    \centering
+    % --- 左側の図 (幅の48%) ---
+    \begin{minipage}{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{./figure/BLDC_2.png} % 画像ファイル名
+        \caption{BLDCモーター(上)}
+        \label{fig:BLDC_top}
+    \end{minipage}
+    \hfill % ← この「バネ」が左右の間隔を調整してくれる
+    % --- 右側の図 (幅の48%) ---
+    \begin{minipage}{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{./figure/BLDC_1.png} % 画像ファイル名
+        \caption{BLDCモーター(下)}
+        \label{fig:BLDC_bottom}
+    \end{minipage}
+\end{figure}
 
 \subsection{ステータの設計}
 ロボットアームやドローン用途に用いられる市販のアウターロータ方式のBLDCモーターの形状を参考に設計した．
-前研究では六角穴付きボルトを用いた9スロットのステータを設計したが，コギングトルクが非常に大きく，精密な制御が困難であったためスロット数を15に増やし，コギングトルクが小さくなるように設計した．
-また，六角穴付きボルトの材質であるSCM435(クロムモリブデン鋼)とSPCC(冷延鋼板)では，後者の方が軟磁性体に近く，残留磁力が比較的小さいため，性能の向上が期待できる．\\
-　厚さ3.2mmの板をレーザー加工機で切り出し，断面を絶縁し4枚を重ね合わせ接着することでステータを構成する．
-薄板複数枚をそれぞれ絶縁して組み合わせることで，磁界によりステータ内部で発生する渦電流を減少させることができ，発熱を抑えることができる．
+著者による以前の検討では六角穴付きボルトを用いた9スロットのステータを設計したが，コギングトルクが非常に大きく，精密な制御が困難であった．スロット数を15に増やし，
+材質を六角穴付きボルトの材質であるSCM435(クロムモリブデン鋼)からSPCC(冷延鋼板)に変更することでコギングトルクの低減が期待できる．\\
+　厚さ3.2mmの平板をレーザー加工機で切り出し，断面を絶縁し4枚を重ね合わせ接着することでステータを構成する．
+薄板複数枚をそれぞれ絶縁して組み合わせることで，ステータ内部で発生する渦電流を低減させ，発熱を抑える効果が期待できる．\\
+　設計したステータを\textgt{図\ref{fig:stater}}に示す．
 \begin{figure}[H] % [tb]は「上(top)か下(bottom)に配置しろ」という指定
     \centering     % 図を中央寄せ
     % ▼ ここで画像を指定。[width=\linewidth]で段の幅ピッタリになる
-    \includegraphics[width=0.4\linewidth]{./figure/stater.png} 
+    \includegraphics[width=0.55\linewidth]{./figure/stater.png} 
     \caption{設計したステータ} % キャプションは図の下が一般的
     \label{fig:stater}            % 本文で参照するためのラベル
 \end{figure}
 
 \vspace{-7mm}
 \subsection{ロータの設計}
-12 \times 10 \times 5\, \mathrm{mm} のネオジム磁石を用いた極数22極のロータを設計した．
-極数とスロット数の最小公倍数(LCM)は330であり，コギングトルクの減少，出力トルクの向上が期待できる．\\
-　BLDCモータの慣性モーメントはロータの慣性モーメントに依存し，その慣性モーメントはロータの質量M，半径をRとした時
+$12 \times 10 \times 5 \, (\mathrm{mm})$．表面磁束密度$370(\mathrm{mT})$のネオジム磁石を用いた極数22極のロータを設計した．
+極数とスロット数の最小公倍数(LCM)は330であり，十分大きいため，コギングトルクの低減，出力トルクの向上が期待できる．\\
+　ロータの慣性モーメントはBLDCモーターの性能に大きく影響を与え．それが大きいと急加速，急停止等の制御が困難になるため小さい方が望ましい．その慣性モーメントはロータの質量M，半径をR，形状による定数をkとしたとき
 \begin{equation}
-    I = \frac{MR^2}{2}
+    I = kMR^2
 \end{equation}
 以上で与えられ，ロータ質量Mとロータ半径Rの2乗に比例して大きくなることが分かる．
-慣性モーメントが大きくなると，急加速，急停止等の制御が困難になる．
-ロータの材質をPLAとし，3Dプリンタで製造することで，慣性モーメントの低減を図る．
-アウターロータ方式のBLDCモーターは外部から空気が流れ込まないため，内部のコイルとステータの発熱が顕著になるという欠点があるが，肉抜きを行い空気の流入口を設けることで冷却効果が期待できるよう設計した．
+ロータの材質をPLAとし，3Dプリンタで製造することで，質量を小さくし，慣性モーメントの低減を図る．\\
+　アウターロータ方式のBLDCモーターは外部から空気が流入しないため，内部のコイルとステータの発熱が顕著になるという欠点がある．ロータに空気の流入口を設けることで冷却効果が期待できるよう設計した．\\
+　設計したロータを\textgt{図\ref{fig:rotor}}に示す．
 \begin{figure}[H] % [tb]は「上(top)か下(bottom)に配置しろ」という指定
     \centering     % 図を中央寄せ
     % ▼ ここで画像を指定。[width=\linewidth]で段の幅ピッタリになる
-    \includegraphics[width=0.4\linewidth]{./figure/rotor.png} 
+    \includegraphics[width=0.55\linewidth]{./figure/rotor.png} 
     \caption{設計したロータ} % キャプションは図の下が一般的
     \label{fig:rotor}            % 本文で参照するためのラベル
 \end{figure}
 
 \section{トルクの推定}
-あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+設計したBLDCモーターのトルクを計算して推定することで，理論値と実測値の乖離がどの程度大きくなるかを知ることができ，今後のBLDCモーターの設計に応用できる．
+理論式を述べた後，各パラメータを代入してトルクを概算する．
+
+\subsection{トルクの理論式}
+表面磁石型のBLDCモーターのトルクの理論値を求める式は，極対数$P_n$，磁石による鎖交磁束$\Psi_a(\mathrm{Wb})$，磁石の作る磁束に直交する磁束を作る電流$I_q(\mathrm{A})$を用いると，以下で与えられる．
+\begin{equation}
+    T = P_n \cdot \Psi_a \cdot I_q \label{eq:T_theoretical}
+\end{equation}
+この時，$\Psi_a(\mathrm{Wb})$は1スロットあたりのコイルの巻数$N$，巻線係数$k_w$，1極あたりのエアギャップの磁束密度$B_g(\mathrm{T})$，磁石の面積$S_g(\mathrm{m^2})$を用いて以下となる
+\begin{equation}
+    \Psi_a = N \cdot k_w \cdot B_g \cdot S_g \label{eq:Psi_a_theoretical}
+\end{equation}
+$B_g(\mathrm{T})$は磁石の残留磁束密度$B_r(\mathrm{T})$，エアギャップの距離$l_g(\mathrm{m})$，磁石の透磁率$\mu_r$，磁石の厚さ$l_m(\mathrm{m})$を用いて以下で表される
+\begin{equation}
+    B_g = \frac{B_r}{1+\frac{l_g \cdot \mu_r}{l_m}} \label{eq:B_g_theoretical}
+\end{equation}
+
+\subsection{トルクの概算}
+式(\ref{eq:T_theoretical}),(\ref{eq:Psi_a_theoretical}),(\ref{eq:B_g_theoretical})に\textgt{表\ref{tab:motor_params}}に示すパラメータを代入し計算を行った結果，
+\begin{equation}
+    T \thickapprox 0.1178 \, (\mathrm{N \cdot m})
+\end{equation}
+という計算結果を得た．これをトルクの理論値として採用し，今後の比較に用いる．
+
+\begin{table}[H]
+    \centering
+    \caption{設計したモーターの各パラメータ} % ★表のキャプションは「上」！
+    \label{tab:motor_params}
+    % 列指定: c=中央揃え, l=左揃え, r=右揃え
+    % ここでは 記号(中央) | 意味(左) | 値(右) | 単位(左) にしてみた
+    \begin{tabular}{clrl}
+        \toprule % 上の太線
+        記号 & パラメータ & \multicolumn{1}{c}{値} & 単位 \\ 
+        \midrule % 中の細線
+        $P_n$      & 極対数                 & 11   & - \\
+        $I_q$      & $q$軸電流              & 1.000 & $\mathrm{A}$ \\
+        $N$        & 1ステータのコイルの巻数 & 100   & - \\
+        $k_w$      & 巻線係数               & 0.900  & - \\
+        $S_g$      & 磁石の表面積           & 120.0   & $\mathrm{mm^2}$ \\
+        $B_r$      & 磁石の残留磁束密度      & 1.200  & $\mathrm{T}$ \\
+        $l_g$      & エアギャップ長         & 1.000& $\mathrm{mm}$ \\
+        $\mu_r$    & 磁石の透磁率           & 1.050 & - \\
+        $l_m$      & 磁石の厚さ             & 5.000& $\mathrm{mm}$ \\
+        \bottomrule % 下の太線
+    \end{tabular}
+\end{table}
+
 \section{トルクの測定}
 \subsection{測定方法}
 \subsection{制御方法}
