@@ -1,5 +1,5 @@
 # Fdb version 4
-["lualatex"] 1770974115.61561 "c:/Users/dubia/Desktop/SPCC_BLDC/report/report.tex" "report.pdf" "report" 1770974124.55013 0
+["lualatex"] 1770992764.41432 "c:/Users/dubia/Desktop/SPCC_BLDC/report/report.tex" "report.pdf" "report" 1770992772.52408 0
   "C:/Users/dubia/.texlive2025/texmf-var/luatexja/extra_arial-boldmt.luc" 1770790130 99895 912bcaf2772c3896d01cf35dc4757c1e ""
   "C:/Users/dubia/.texlive2025/texmf-var/luatexja/extra_arialmt.luc" 1770790129 99895 3a51099ef7afab570bbf8c2197ae09e8 ""
   "C:/Users/dubia/.texlive2025/texmf-var/luatexja/extra_arialnarrow-bolditalic.luc" 1770790129 15365 09882f368395ca9ece2d6e9f45549e8f ""
@@ -31,7 +31,7 @@
   "C:/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/msmincho-1.luc" 1770790128 1539015 5cbec68f2f28f7dbdec2d5133f8f7f5f ""
   "C:/texlive/2025/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1770876716 5764 be8dae8d89fe200542aaf19095e3c86d ""
   "C:/texlive/2025/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz" 1770790114 333395 aa7bf2547ec4cacb82459c112ee36cf9 ""
-  "c:/Users/dubia/Desktop/SPCC_BLDC/report/report.tex" 1770974114 17300 243ab6fefb97c6ef82a5548cf6272a70 ""
+  "c:/Users/dubia/Desktop/SPCC_BLDC/report/report.tex" 1770992753 17533 34e07f3096e8ce8757a3f78108d396f3 ""
   "c:/Windows/Fonts/CENTURY.TTF" 1649330788 165248 6a5c26dabea1b804f8d4eb8e7eaa944c ""
   "c:/Windows/Fonts/arial.ttf" 1711956127 1047208 46959447e2ae7967c74c26894dc58973 ""
   "c:/Windows/Fonts/msgothic.ttc" 1711956129 8990160 288b7f248ea6b391dd41cc0397aa1d9f ""
@@ -214,8 +214,8 @@
   "figure/kiban.jpg" 1770967364 239913 5fd001fb42dd21af1786d6a0d94c2621 ""
   "figure/rotor.png" 1770876373 189197 4769604d14ff315c1b9bad0701913f6e ""
   "figure/stater.png" 1770876373 97800 2667135c2433183b8a4bf19a828214cc ""
-  "report.aux" 1770974123 2659 7f5fd2a06bc784278a3b400f3b1e2335 "lualatex"
-  "report.tex" 1770974114 17300 243ab6fefb97c6ef82a5548cf6272a70 ""
+  "report.aux" 1770992771 2707 4befb077e0f93f251aa1187fdfd4b4e2 "lualatex"
+  "report.tex" 1770992753 17533 34e07f3096e8ce8757a3f78108d396f3 ""
   (generated)
   "report.aux"
   "report.log"
