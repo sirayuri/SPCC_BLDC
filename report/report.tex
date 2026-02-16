@@ -17,6 +17,7 @@
 \usepackage{subcaption}
 \captionsetup{compatibility=false} % ltjsarticleとの相性問題を回避するおまじない
 
+
 % メインの日本語フォント（明朝）を設定
 % BoldFont = MS Gothic とすることで、太字の時だけゴシックに切り替わる
 \setmainjfont[
@@ -40,6 +41,12 @@
 \setsansfont{Arial}
 \setsansjfont{MS Gothic}
 
+\usepackage{caption}
+
+% labelsep = quad  --> コロンを消して「1文字分の空白(\quad)」を入れる
+% labelsep = space --> コロンを消して「半角スペース」を入れる
+\captionsetup{font=sf, labelsep=quad}
+
 % --- タイトル情報 ---
 \title{
     \vspace{-8.5mm} % ← ここ！ 数値はプレビュー見ながら調整して（-15mmとか）
@@ -61,7 +68,7 @@
         \begin{tabular}{@{}l@{}} 
             ◯渡辺敦也(鳥羽商船高等専門学校，Atsuya WATANABE)※\\
             　児玉謙司(鳥羽商船高等専門学校，Kenji KODAMA)\\
-            　宮﨑孝(鳥羽商船高等専門学校，Takashi MIYAZAKI)
+            　宮崎孝(鳥羽商船高等専門学校，Takashi MIYAZAKI)
         \end{tabular}
     }%
 }
@@ -79,6 +86,9 @@
 % --- 参考文献のスタイル変更 ---
 % 1. リストの番号を [1] から 1) に変更
 \renewcommand{\@biblabel}[1]{#1)}
+
+\newcommand{\figref}[1]{\textsf{図\ref{#1}}}
+\newcommand{\tabref}[1]{\textsf{表\ref{#1}}}
 
 % 2. 本文中の参照（\cite）を右上の「1)」に変更
 % もし「右上の小さい文字」にしたくない場合は \textsuperscript を外してね
@@ -142,7 +152,7 @@
 \section{BLDCモーターの設計}
 BLDCモーターには主にロータがコイルより内側にあるインナーロータ方式と，コイルより外側にあるアウターロータ方式の2種類が存在する．ロボット業界では出力トルクが大きいことや，関節に用いやすい形状であることから後者の方が需要が高い．
 本研究では製作難易度とロボット業界での需要を踏まえ，アウターロータ方式のBLDCモーターを採用し，SolidWorksを用いて設計した．
-設計したBLDCモーターの全体像を\textgt{図\ref{fig:BLDC_all}}に示す．
+設計したBLDCモーターの全体像を\textgt{\figref{fig:BLDC_all}}に示す．
 \begin{figure}[H]
     \centering
     % --- (a) 左側の図 ---
@@ -167,12 +177,13 @@ BLDCモーターには主にロータがコイルより内側にあるインナ�
 
 \vspace{-7mm}
 \subsection{ステータの設計}
+\vspace{-3mm}
 ロボットアームやドローン用途に用いられる市販のアウターロータ方式のBLDCモーターの形状を参考に設計した．
 これまでの検討では六角穴付きボルトを用いた9スロットのステータを設計したが，コギングトルクが非常に大きく，精密な制御が困難であった．スロット数を15に増やし，
 材質を六角穴付きボルトの材質であるSCM435(クロムモリブデン鋼)からより軟磁性体に近いSPCC(冷延鋼板)に変更することでコギングトルクの低減が期待できる．\\
 　SPCCをレーザー加工機で切り出し，断面を絶縁し4枚を重ね合わせ接着することで外径$88 \mathrm{mm}$のステータを構成する．このとき，レーザー加工機の加工限界を考慮し，厚さ3.2mmの薄板を用いる．
 複数枚をそれぞれ絶縁して組み合わせることで，ステータ内部で発生する渦電流をある程度低減させ，発熱を抑える効果が多少期待できる．\\
-　設計したステータを\textgt{図\ref{fig:stater}}に示す．
+　設計したステータを\textgt{\figref{fig:stater}}に示す．
 \begin{figure}[H] % [tb]は「上(top)か下(bottom)に配置しろ」という指定
     \centering     % 図を中央寄せ
     % ▼ ここで画像を指定。[width=\linewidth]で段の幅ピッタリになる
@@ -183,11 +194,12 @@ BLDCモーターには主にロータがコイルより内側にあるインナ�
 
 \vspace{-7mm}
 \subsection{ロータの設計}
+\vspace{-3mm}
 $12 \times 10 \times 5 \, (\mathrm{mm})$，表面磁束密度$B_{surf}$が$370(\mathrm{mT})$であるネオジム磁石を用いた外径$105 \mathrm{mm}$，内径$90 \mathrm{mm}$，極数22極のロータを設計した．
 極数とスロット数の最小公倍数(LCM)は330であり，十分大きいため，コギングトルクの低減，出力トルクの向上が期待できる．\\
 　ロータの慣性モーメントはBLDCモーターの性能に大きく影響を与える．ロータの材質をPLAとし，3Dプリンタで製造することで，質量を小さくし，慣性モーメントの低減を図る．\\
 　アウターロータ方式のBLDCモーターは外部から空気が流入しないため，内部のコイルとステータの発熱が顕著になるという欠点がある．ロータに空気の流入口を設けることで冷却効果が期待できるよう設計した．\\
-　設計したロータを\textgt{図\ref{fig:rotor}}に示す．
+　設計したロータを\textgt{\figref{fig:rotor}}に示す．
 \begin{figure}[H] % [tb]は「上(top)か下(bottom)に配置しろ」という指定
     \centering     % 図を中央寄せ
     % ▼ ここで画像を指定。[width=\linewidth]で段の幅ピッタリになる
@@ -198,10 +210,13 @@ $12 \times 10 \times 5 \, (\mathrm{mm})$，表面磁束密度$B_{surf}$が$370(\
 
 \vspace{-7mm}
 \section{トルクの推定}
+\vspace{-3.5mm}
 設計したBLDCモーターのトルクを計算して推定することで，理論値と実測値の乖離がどの程度大きくなるかを知ることができ，今後の設計に応用できる．
 理論式を述べた後，各パラメータを代入してトルクを概算する．
 
+\vspace{-5mm}
 \subsection{トルクの理論式}
+\vspace{-5.5mm}
 表面磁石型のBLDCモーターのトルクの理論値を求める式は，極対数$P_n$，磁石による鎖交磁束$\Psi_a(\mathrm{Wb})$，磁石の作る磁束に直交する磁束を作る電流$I_q(\mathrm{A})$を用いると，次式で与えられる．
 \begin{equation}
     T = \frac{3}{2} \cdot P_n \cdot \Psi_a \cdot I_q \label{eq:T_theoretical}
@@ -215,8 +230,10 @@ $B_g(\mathrm{T})$は磁石の残留磁束密度$B_r(\mathrm{T})$，エアギャ�
     B_g = \frac{B_r}{1+\frac{l_g \cdot \mu_r}{l_m}} \label{eq:B_g_theoretical}
 \end{equation}
 
+\vspace{-1mm}
 \subsection{トルクの概算}
-式(\ref{eq:T_theoretical}),(\ref{eq:Psi_a_theoretical}),(\ref{eq:B_g_theoretical})に\textgt{表\ref{tab:motor_params}}に示すパラメータを代入し計算を行った結果，
+\vspace{-5.5mm}
+式(\ref{eq:T_theoretical}),(\ref{eq:Psi_a_theoretical}),(\ref{eq:B_g_theoretical})に\textgt{\tabref{tab:motor_params}}に示すパラメータを代入し計算を行った結果，
 \begin{equation}
     T \thickapprox 0.1767 \, (\mathrm{N \cdot m})
 \end{equation}
@@ -247,10 +264,12 @@ $B_g(\mathrm{T})$は磁石の残留磁束密度$B_r(\mathrm{T})$，エアギャ�
 
 \vspace{-3.5mm}
 \section{トルクの測定}
-製作したモーターのトルク実測を行う．
+製作したモーターのトルク測定を行う．
 \subsection{測定方法1（無負荷）}
+\vspace{-3mm}
 既知の慣性モーメント$J$を持つロータの角加速度$\dot{\omega}$を測定し，運動方程式 $T = J \cdot \dot{\omega}$ よりトルクを算出する．回転数ごとの動的なトルク特性を取得可能である．
 \subsection{測定方法2（負荷あり）}
+\vspace{-3mm}
 長さ$l$のアームを取り付け，一定電流下で質量$m$の錘と釣り合わせることで静止トルクを測定する（$T = m \cdot g \cdot l$）．
 
 \section{終わりに}
@@ -260,7 +279,7 @@ SPCC(冷延鋼板)を用いたステータと，PLAを用いたロータを設�
 講演では，設計製作したBLDCモーターの始動トルク，連続出力トルク，連続運転時の温度上昇の測定結果と，実際に実用に足る性能であったかを発表する．
 
 \begin{thebibliography}{99}
-    \bibitem{motor_book} R.Krishnan， Permanent Magnet Synchronous and Brushless Dc Motors， CRC Press/TaylorFrancis \& Boca Raton， pp.7-9 (2010)
+    \bibitem{motor_book} R．Krishnan， Permanent Magnet Synchronous and Brushless DC Motors, CRC Press (2010), pp.7--9
 \end{thebibliography}
 
 \end{document}
