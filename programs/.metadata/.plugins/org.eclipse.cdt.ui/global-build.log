@@ -1,0 +1,330 @@
+00:39:26 **** Incremental Build of configuration Debug for project SPCC_BLDC_120_deg ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f3xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f3xx.d" -MT"Core/Src/system_stm32f3xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f3xx.o"
+arm-none-eabi-gcc -o "SPCC_BLDC_120_deg.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\yosaha\Desktop\SPCC_BLDC\programs\SPCC_BLDC_120_deg\STM32F303K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPCC_BLDC_120_deg.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SPCC_BLDC_120_deg.elf
+ 
+arm-none-eabi-size  SPCC_BLDC_120_deg.elf 
+arm-none-eabi-objdump -h -S SPCC_BLDC_120_deg.elf  > "SPCC_BLDC_120_deg.list"
+   text	   data	    bss	    dec	    hex	filename
+  21408	     12	   2084	  23504	   5bd0	SPCC_BLDC_120_deg.elf
+Finished building: default.size.stdout
+ 
+Finished building: SPCC_BLDC_120_deg.list
+ 
+00:42:25 **** Incremental Build of configuration Debug for project SPCC_BLDC_120_deg ****
+make -j12 all 
+arm-none-eabi-size  SPCC_BLDC_120_deg.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21408	     12	   2084	  23504	   5bd0	SPCC_BLDC_120_deg.elf
+Finished building: default.size.stdout
+ 
+19:37:33 **** Incremental Build of configuration Debug for project SPCC_BLDC_120_deg ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SPCC_BLDC_120_deg.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\yosaha\Desktop\SPCC_BLDC\programs\SPCC_BLDC_120_deg\STM32F303K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPCC_BLDC_120_deg.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SPCC_BLDC_120_deg.elf
+ 
+arm-none-eabi-size  SPCC_BLDC_120_deg.elf 
+arm-none-eabi-objdump -h -S SPCC_BLDC_120_deg.elf  > "SPCC_BLDC_120_deg.list"
+   text	   data	    bss	    dec	    hex	filename
+  21408	     12	   2084	  23504	   5bd0	SPCC_BLDC_120_deg.elf
+Finished building: default.size.stdout
+ 
+Finished building: SPCC_BLDC_120_deg.list
+ 
+19:41:03 **** Incremental Build of configuration Debug for project SPCC_BLDC_120_deg ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SPCC_BLDC_120_deg.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\yosaha\Desktop\SPCC_BLDC\programs\SPCC_BLDC_120_deg\STM32F303K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPCC_BLDC_120_deg.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SPCC_BLDC_120_deg.elf
+ 
+arm-none-eabi-size  SPCC_BLDC_120_deg.elf 
+arm-none-eabi-objdump -h -S SPCC_BLDC_120_deg.elf  > "SPCC_BLDC_120_deg.list"
+   text	   data	    bss	    dec	    hex	filename
+  21408	     12	   2084	  23504	   5bd0	SPCC_BLDC_120_deg.elf
+Finished building: default.size.stdout
+ 
+Finished building: SPCC_BLDC_120_deg.list
+ 
+20:10:01 **** Incremental Build of configuration Debug for project SPCC_BLDC_120_deg ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SPCC_BLDC_120_deg.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\yosaha\Desktop\SPCC_BLDC\programs\SPCC_BLDC_120_deg\STM32F303K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPCC_BLDC_120_deg.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SPCC_BLDC_120_deg.elf
+ 
+arm-none-eabi-size  SPCC_BLDC_120_deg.elf 
+arm-none-eabi-objdump -h -S SPCC_BLDC_120_deg.elf  > "SPCC_BLDC_120_deg.list"
+   text	   data	    bss	    dec	    hex	filename
+  21408	     12	   2084	  23504	   5bd0	SPCC_BLDC_120_deg.elf
+Finished building: default.size.stdout
+ 
+Finished building: SPCC_BLDC_120_deg.list
+ 
+20:12:46 **** Incremental Build of configuration Debug for project SPCC_BLDC_120_deg ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SPCC_BLDC_120_deg.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\yosaha\Desktop\SPCC_BLDC\programs\SPCC_BLDC_120_deg\STM32F303K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPCC_BLDC_120_deg.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SPCC_BLDC_120_deg.elf
+ 
+arm-none-eabi-size  SPCC_BLDC_120_deg.elf 
+arm-none-eabi-objdump -h -S SPCC_BLDC_120_deg.elf  > "SPCC_BLDC_120_deg.list"
+   text	   data	    bss	    dec	    hex	filename
+  21408	     12	   2084	  23504	   5bd0	SPCC_BLDC_120_deg.elf
+Finished building: default.size.stdout
+ 
+Finished building: SPCC_BLDC_120_deg.list
+ 
+20:15:08 **** Incremental Build of configuration Debug for project SPCC_BLDC_120_deg ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SPCC_BLDC_120_deg.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\yosaha\Desktop\SPCC_BLDC\programs\SPCC_BLDC_120_deg\STM32F303K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPCC_BLDC_120_deg.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SPCC_BLDC_120_deg.elf
+ 
+arm-none-eabi-size  SPCC_BLDC_120_deg.elf 
+arm-none-eabi-objdump -h -S SPCC_BLDC_120_deg.elf  > "SPCC_BLDC_120_deg.list"
+   text	   data	    bss	    dec	    hex	filename
+  21408	     12	   2084	  23504	   5bd0	SPCC_BLDC_120_deg.elf
+Finished building: default.size.stdout
+ 
+Finished building: SPCC_BLDC_120_deg.list
+ 
+20:18:59 **** Incremental Build of configuration Debug for project SPCC_BLDC_120_deg ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SPCC_BLDC_120_deg.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\yosaha\Desktop\SPCC_BLDC\programs\SPCC_BLDC_120_deg\STM32F303K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPCC_BLDC_120_deg.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SPCC_BLDC_120_deg.elf
+ 
+arm-none-eabi-size  SPCC_BLDC_120_deg.elf 
+arm-none-eabi-objdump -h -S SPCC_BLDC_120_deg.elf  > "SPCC_BLDC_120_deg.list"
+   text	   data	    bss	    dec	    hex	filename
+  21408	     12	   2084	  23504	   5bd0	SPCC_BLDC_120_deg.elf
+Finished building: default.size.stdout
+ 
+Finished building: SPCC_BLDC_120_deg.list
+ 
+22:18:13 **** Build of configuration Debug for project SPCC_BLDC_FOC_dq_FF ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SPCC_BLDC_FOC_dq_FF.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\yosaha\Desktop\SPCC_BLDC\programs\SPCC_BLDC_FOC_dq_FF\STM32F303K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPCC_BLDC_FOC_dq_FF.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SPCC_BLDC_FOC_dq_FF.elf
+ 
+arm-none-eabi-size  SPCC_BLDC_FOC_dq_FF.elf 
+arm-none-eabi-objdump -h -S SPCC_BLDC_FOC_dq_FF.elf  > "SPCC_BLDC_FOC_dq_FF.list"
+   text	   data	    bss	    dec	    hex	filename
+  43788	    480	   2592	  46860	   b70c	SPCC_BLDC_FOC_dq_FF.elf
+Finished building: default.size.stdout
+ 
+Finished building: SPCC_BLDC_FOC_dq_FF.list
+ 
+22:27:56 **** Incremental Build of configuration Debug for project SPCC_BLDC_FOC_dq_FF ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SPCC_BLDC_FOC_dq_FF.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\yosaha\Desktop\SPCC_BLDC\programs\SPCC_BLDC_FOC_dq_FF\STM32F303K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPCC_BLDC_FOC_dq_FF.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SPCC_BLDC_FOC_dq_FF.elf
+ 
+arm-none-eabi-size  SPCC_BLDC_FOC_dq_FF.elf 
+arm-none-eabi-objdump -h -S SPCC_BLDC_FOC_dq_FF.elf  > "SPCC_BLDC_FOC_dq_FF.list"
+   text	   data	    bss	    dec	    hex	filename
+  43788	    480	   2592	  46860	   b70c	SPCC_BLDC_FOC_dq_FF.elf
+Finished building: default.size.stdout
+ 
+Finished building: SPCC_BLDC_FOC_dq_FF.list
+ 
+22:29:55 **** Incremental Build of configuration Debug for project SPCC_BLDC_FOC_dq_FF ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SPCC_BLDC_FOC_dq_FF.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\yosaha\Desktop\SPCC_BLDC\programs\SPCC_BLDC_FOC_dq_FF\STM32F303K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPCC_BLDC_FOC_dq_FF.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SPCC_BLDC_FOC_dq_FF.elf
+ 
+arm-none-eabi-size  SPCC_BLDC_FOC_dq_FF.elf 
+arm-none-eabi-objdump -h -S SPCC_BLDC_FOC_dq_FF.elf  > "SPCC_BLDC_FOC_dq_FF.list"
+   text	   data	    bss	    dec	    hex	filename
+  43788	    480	   2592	  46860	   b70c	SPCC_BLDC_FOC_dq_FF.elf
+Finished building: default.size.stdout
+ 
+Finished building: SPCC_BLDC_FOC_dq_FF.list
+ 
+22:30:48 **** Incremental Build of configuration Debug for project SPCC_BLDC_FOC_dq_FF ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SPCC_BLDC_FOC_dq_FF.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\yosaha\Desktop\SPCC_BLDC\programs\SPCC_BLDC_FOC_dq_FF\STM32F303K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPCC_BLDC_FOC_dq_FF.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SPCC_BLDC_FOC_dq_FF.elf
+ 
+arm-none-eabi-size  SPCC_BLDC_FOC_dq_FF.elf 
+arm-none-eabi-objdump -h -S SPCC_BLDC_FOC_dq_FF.elf  > "SPCC_BLDC_FOC_dq_FF.list"
+   text	   data	    bss	    dec	    hex	filename
+  43788	    480	   2592	  46860	   b70c	SPCC_BLDC_FOC_dq_FF.elf
+Finished building: default.size.stdout
+ 
+Finished building: SPCC_BLDC_FOC_dq_FF.list
+ 
+22:32:08 **** Incremental Build of configuration Debug for project SPCC_BLDC_FOC_dq_FF ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SPCC_BLDC_FOC_dq_FF.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\yosaha\Desktop\SPCC_BLDC\programs\SPCC_BLDC_FOC_dq_FF\STM32F303K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPCC_BLDC_FOC_dq_FF.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SPCC_BLDC_FOC_dq_FF.elf
+ 
+arm-none-eabi-size  SPCC_BLDC_FOC_dq_FF.elf 
+arm-none-eabi-objdump -h -S SPCC_BLDC_FOC_dq_FF.elf  > "SPCC_BLDC_FOC_dq_FF.list"
+   text	   data	    bss	    dec	    hex	filename
+  43788	    480	   2592	  46860	   b70c	SPCC_BLDC_FOC_dq_FF.elf
+Finished building: default.size.stdout
+ 
+Finished building: SPCC_BLDC_FOC_dq_FF.list
+ 
+22:33:40 **** Incremental Build of configuration Debug for project SPCC_BLDC_FOC_dq_FF ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SPCC_BLDC_FOC_dq_FF.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\yosaha\Desktop\SPCC_BLDC\programs\SPCC_BLDC_FOC_dq_FF\STM32F303K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPCC_BLDC_FOC_dq_FF.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SPCC_BLDC_FOC_dq_FF.elf
+ 
+arm-none-eabi-size  SPCC_BLDC_FOC_dq_FF.elf 
+arm-none-eabi-objdump -h -S SPCC_BLDC_FOC_dq_FF.elf  > "SPCC_BLDC_FOC_dq_FF.list"
+   text	   data	    bss	    dec	    hex	filename
+  43788	    480	   2592	  46860	   b70c	SPCC_BLDC_FOC_dq_FF.elf
+Finished building: default.size.stdout
+ 
+Finished building: SPCC_BLDC_FOC_dq_FF.list
+ 
+22:36:46 **** Incremental Build of configuration Debug for project SPCC_BLDC_FOC_dq_FF ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SPCC_BLDC_FOC_dq_FF.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\yosaha\Desktop\SPCC_BLDC\programs\SPCC_BLDC_FOC_dq_FF\STM32F303K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPCC_BLDC_FOC_dq_FF.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SPCC_BLDC_FOC_dq_FF.elf
+ 
+arm-none-eabi-size  SPCC_BLDC_FOC_dq_FF.elf 
+arm-none-eabi-objdump -h -S SPCC_BLDC_FOC_dq_FF.elf  > "SPCC_BLDC_FOC_dq_FF.list"
+   text	   data	    bss	    dec	    hex	filename
+  43780	    480	   2592	  46852	   b704	SPCC_BLDC_FOC_dq_FF.elf
+Finished building: default.size.stdout
+ 
+Finished building: SPCC_BLDC_FOC_dq_FF.list
+ 
+22:44:25 **** Incremental Build of configuration Debug for project SPCC_BLDC_FOC_dq_FF ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SPCC_BLDC_FOC_dq_FF.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\yosaha\Desktop\SPCC_BLDC\programs\SPCC_BLDC_FOC_dq_FF\STM32F303K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPCC_BLDC_FOC_dq_FF.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SPCC_BLDC_FOC_dq_FF.elf
+ 
+arm-none-eabi-size  SPCC_BLDC_FOC_dq_FF.elf 
+arm-none-eabi-objdump -h -S SPCC_BLDC_FOC_dq_FF.elf  > "SPCC_BLDC_FOC_dq_FF.list"
+   text	   data	    bss	    dec	    hex	filename
+  43772	    480	   2592	  46844	   b6fc	SPCC_BLDC_FOC_dq_FF.elf
+Finished building: default.size.stdout
+ 
+Finished building: SPCC_BLDC_FOC_dq_FF.list
+ 
+22:45:48 **** Incremental Build of configuration Debug for project SPCC_BLDC_FOC_dq_FF ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SPCC_BLDC_FOC_dq_FF.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\yosaha\Desktop\SPCC_BLDC\programs\SPCC_BLDC_FOC_dq_FF\STM32F303K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPCC_BLDC_FOC_dq_FF.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SPCC_BLDC_FOC_dq_FF.elf
+ 
+arm-none-eabi-size  SPCC_BLDC_FOC_dq_FF.elf 
+arm-none-eabi-objdump -h -S SPCC_BLDC_FOC_dq_FF.elf  > "SPCC_BLDC_FOC_dq_FF.list"
+   text	   data	    bss	    dec	    hex	filename
+  43780	    480	   2592	  46852	   b704	SPCC_BLDC_FOC_dq_FF.elf
+Finished building: default.size.stdout
+ 
+Finished building: SPCC_BLDC_FOC_dq_FF.list
+ 
+22:47:03 **** Incremental Build of configuration Debug for project SPCC_BLDC_FOC_dq_FF ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SPCC_BLDC_FOC_dq_FF.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\yosaha\Desktop\SPCC_BLDC\programs\SPCC_BLDC_FOC_dq_FF\STM32F303K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPCC_BLDC_FOC_dq_FF.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SPCC_BLDC_FOC_dq_FF.elf
+ 
+arm-none-eabi-size  SPCC_BLDC_FOC_dq_FF.elf 
+arm-none-eabi-objdump -h -S SPCC_BLDC_FOC_dq_FF.elf  > "SPCC_BLDC_FOC_dq_FF.list"
+   text	   data	    bss	    dec	    hex	filename
+  43780	    480	   2592	  46852	   b704	SPCC_BLDC_FOC_dq_FF.elf
+Finished building: default.size.stdout
+ 
+Finished building: SPCC_BLDC_FOC_dq_FF.list
+ 
+22:48:56 **** Incremental Build of configuration Debug for project SPCC_BLDC_FOC_dq_FF ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SPCC_BLDC_FOC_dq_FF.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\yosaha\Desktop\SPCC_BLDC\programs\SPCC_BLDC_FOC_dq_FF\STM32F303K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPCC_BLDC_FOC_dq_FF.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SPCC_BLDC_FOC_dq_FF.elf
+ 
+arm-none-eabi-size  SPCC_BLDC_FOC_dq_FF.elf 
+arm-none-eabi-objdump -h -S SPCC_BLDC_FOC_dq_FF.elf  > "SPCC_BLDC_FOC_dq_FF.list"
+   text	   data	    bss	    dec	    hex	filename
+  43780	    480	   2592	  46852	   b704	SPCC_BLDC_FOC_dq_FF.elf
+Finished building: default.size.stdout
+ 
+Finished building: SPCC_BLDC_FOC_dq_FF.list
+ 
+22:50:56 **** Incremental Build of configuration Debug for project SPCC_BLDC_FOC_dq_FF ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SPCC_BLDC_FOC_dq_FF.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\yosaha\Desktop\SPCC_BLDC\programs\SPCC_BLDC_FOC_dq_FF\STM32F303K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPCC_BLDC_FOC_dq_FF.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SPCC_BLDC_FOC_dq_FF.elf
+ 
+arm-none-eabi-size  SPCC_BLDC_FOC_dq_FF.elf 
+arm-none-eabi-objdump -h -S SPCC_BLDC_FOC_dq_FF.elf  > "SPCC_BLDC_FOC_dq_FF.list"
+   text	   data	    bss	    dec	    hex	filename
+  42840	    476	   2548	  45864	   b328	SPCC_BLDC_FOC_dq_FF.elf
+Finished building: default.size.stdout
+ 
+Finished building: SPCC_BLDC_FOC_dq_FF.list
+ 
+22:53:07 **** Incremental Build of configuration Debug for project SPCC_BLDC_FOC_dq_FF ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SPCC_BLDC_FOC_dq_FF.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\yosaha\Desktop\SPCC_BLDC\programs\SPCC_BLDC_FOC_dq_FF\STM32F303K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPCC_BLDC_FOC_dq_FF.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SPCC_BLDC_FOC_dq_FF.elf
+ 
+arm-none-eabi-size  SPCC_BLDC_FOC_dq_FF.elf 
+arm-none-eabi-objdump -h -S SPCC_BLDC_FOC_dq_FF.elf  > "SPCC_BLDC_FOC_dq_FF.list"
+   text	   data	    bss	    dec	    hex	filename
+  43748	    480	   2592	  46820	   b6e4	SPCC_BLDC_FOC_dq_FF.elf
+Finished building: default.size.stdout
+ 
+Finished building: SPCC_BLDC_FOC_dq_FF.list
+ 
+22:57:55 **** Incremental Build of configuration Debug for project SPCC_BLDC_FOC_dq_FF ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SPCC_BLDC_FOC_dq_FF.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\yosaha\Desktop\SPCC_BLDC\programs\SPCC_BLDC_FOC_dq_FF\STM32F303K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPCC_BLDC_FOC_dq_FF.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SPCC_BLDC_FOC_dq_FF.elf
+ 
+arm-none-eabi-size  SPCC_BLDC_FOC_dq_FF.elf 
+arm-none-eabi-objdump -h -S SPCC_BLDC_FOC_dq_FF.elf  > "SPCC_BLDC_FOC_dq_FF.list"
+   text	   data	    bss	    dec	    hex	filename
+  43724	    480	   2592	  46796	   b6cc	SPCC_BLDC_FOC_dq_FF.elf
+Finished building: default.size.stdout
+ 
+Finished building: SPCC_BLDC_FOC_dq_FF.list
+ 
+22:59:18 **** Incremental Build of configuration Debug for project SPCC_BLDC_FOC_dq_FF ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SPCC_BLDC_FOC_dq_FF.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\yosaha\Desktop\SPCC_BLDC\programs\SPCC_BLDC_FOC_dq_FF\STM32F303K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPCC_BLDC_FOC_dq_FF.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SPCC_BLDC_FOC_dq_FF.elf
+ 
+arm-none-eabi-size  SPCC_BLDC_FOC_dq_FF.elf 
+arm-none-eabi-objdump -h -S SPCC_BLDC_FOC_dq_FF.elf  > "SPCC_BLDC_FOC_dq_FF.list"
+   text	   data	    bss	    dec	    hex	filename
+  43724	    480	   2592	  46796	   b6cc	SPCC_BLDC_FOC_dq_FF.elf
+Finished building: default.size.stdout
+ 
+Finished building: SPCC_BLDC_FOC_dq_FF.list
+ 
+23:00:29 **** Incremental Build of configuration Debug for project SPCC_BLDC_FOC_dq_FF ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SPCC_BLDC_FOC_dq_FF.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\yosaha\Desktop\SPCC_BLDC\programs\SPCC_BLDC_FOC_dq_FF\STM32F303K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPCC_BLDC_FOC_dq_FF.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SPCC_BLDC_FOC_dq_FF.elf
+ 
+arm-none-eabi-size  SPCC_BLDC_FOC_dq_FF.elf 
+arm-none-eabi-objdump -h -S SPCC_BLDC_FOC_dq_FF.elf  > "SPCC_BLDC_FOC_dq_FF.list"
+   text	   data	    bss	    dec	    hex	filename
+  43732	    480	   2592	  46804	   b6d4	SPCC_BLDC_FOC_dq_FF.elf
+Finished building: default.size.stdout
+ 
+Finished building: SPCC_BLDC_FOC_dq_FF.list
+ 
