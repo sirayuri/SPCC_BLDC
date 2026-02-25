@@ -130,9 +130,9 @@ int offset_ave_num = 30;
 volatile bool offset_done_flag = false;
 
 //現在の電流値
-float I_u = 0;
-float I_v = 0;
-float I_w = 0;
+volatile float I_u = 0;
+volatile float I_v = 0;
+volatile float I_w = 0;
 
 //電流の総和
 float I_sum = 0;
@@ -159,7 +159,7 @@ int U_PWM = 0;
 int V_PWM = 0;
 int W_PWM = 0;
 
-int Amp_PWM_MAX = 450;
+int Amp_PWM_MAX = 300;
 
 //PI制御用構造体
 PI_t Id_PI;
@@ -179,6 +179,8 @@ int cycle_count = 1;
 
 /*	位置PID用変数	*/
 PID_t Place_PID;
+
+float test_theta = 0.0;
 
 /* USER CODE END PV */
 
@@ -244,27 +246,30 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 {
     if (hadc->Instance == ADC1) {
-    	//オフセット検出モードか、電流センシングモードか
-    	if(offset_done_flag == false){
-    		adc_offset[0] += adc_raw[0];
-    		adc_offset[1] += adc_raw[1];
-    		adc_offset[2] += adc_raw[2];
+    	if(__HAL_TIM_GET_COUNTER(&htim3) < 500){
+        	//オフセット検出モードか、電流センシングモードか
+        	if(offset_done_flag == false){
+        		adc_offset[0] += adc_raw[0];
+        		adc_offset[1] += adc_raw[1];
+        		adc_offset[2] += adc_raw[2];
 
-    		offset_count++;
+        		offset_count++;
 
-    		if(offset_count >= offset_ave_num){
-				adc_offset[0] = adc_offset[0] / offset_ave_num;
-				adc_offset[1] = adc_offset[1] / offset_ave_num;
-				adc_offset[2] = adc_offset[2] / offset_ave_num;
-    			offset_done_flag = true;
-    		}
-    	}
-    	else{
-    		//(3.3 / 4096.0)) / 0.05 = 0.01611
-    		I_u = (float)(adc_raw[2] - adc_offset[2]) * 0.01611;
-    		I_v = (float)(adc_raw[1] - adc_offset[1]) * 0.01611;
-    		I_w = (float)(adc_raw[0] - adc_offset[0]) * 0.01611;
-    		I_sum = I_u + I_v + I_w;
+        		if(offset_count >= offset_ave_num){
+    				adc_offset[0] = adc_offset[0] / offset_ave_num;
+    				adc_offset[1] = adc_offset[1] / offset_ave_num;
+    				adc_offset[2] = adc_offset[2] / offset_ave_num;
+        			offset_done_flag = true;
+        		}
+        	}
+        	else{
+        		//(3.3 / 4096.0)) / 0.05 = 0.01611
+        		I_u = (float)(adc_raw[2] - adc_offset[2]) * 0.01611;
+        		I_v = (float)(adc_raw[1] - adc_offset[1]) * 0.01611;
+        		I_w = (float)(adc_raw[0] - adc_offset[0]) * 0.01611;
+        		I_sum = I_u + I_v + I_w;
+        		adc_flag = true;
+        	}
     	}
     }
 }
@@ -373,9 +378,9 @@ int main(void)
   HAL_GPIO_WritePin(W_SD_GPIO_Port, W_SD_Pin, SET);
 
   //回転を固定
-  SET_PWM_DUTY(U, 500);
-  SET_PWM_DUTY(V, 500);
-  SET_PWM_DUTY(W, 500);
+  SET_PWM_DUTY(U, 0);
+  SET_PWM_DUTY(V, 0);
+  SET_PWM_DUTY(W, 0);
 
   //ADCをDMAモードで待機！
   if (HAL_ADC_Start_DMA(&hadc1, (uint32_t*)adc_raw, 3) != HAL_OK)
@@ -390,12 +395,12 @@ int main(void)
   /*	電気角のリセット	*/
 
   //電流方向U->Vのときを電気角0[rad]と定義
-  SET_PWM_DUTY(U, 300);
+  SET_PWM_DUTY(U, 200);
   SET_PWM_DUTY(V, 0);
   SET_PWM_DUTY(W, 0);
 
   //固定待ち...
-  HAL_Delay(2000);
+  HAL_Delay(5000);
 
   //0カウントをセット
   __HAL_TIM_SET_COUNTER(&htim2, 0);
@@ -420,15 +425,15 @@ int main(void)
 
   //d軸電流のパラメータを設定
   Id_PI.goal = 0.0;
-  Id_PI.kp = 0.5;
-  Id_PI.ki = 30;
-  Id_PI.integral_limit = 300;
+  Id_PI.kp = 1.88;
+  Id_PI.ki = 1;
+  Id_PI.integral_limit = 10;
 
   //q軸電流のパラメータを設定
-  Iq_PI.goal = 1;
-  Iq_PI.kp = 0.5;
-  Iq_PI.ki = 30;
-  Iq_PI.integral_limit = 300;
+  Iq_PI.goal = 3.2;
+  Iq_PI.kp = 1.88;
+  Iq_PI.ki = 1;
+  Iq_PI.integral_limit = 10;
 
   /* USER CODE END 2 */
 
@@ -441,7 +446,6 @@ int main(void)
     /* USER CODE BEGIN 3 */
 
 	  /*	現在のカウントを取得	*/
-//	  cnt_now = 20479 - __HAL_TIM_GET_COUNTER(&htim2);
 	  cnt_now = __HAL_TIM_GET_COUNTER(&htim2);
 
 	  /*	ラジアン角を算出して、ついでに電気角も算出！	*/
@@ -451,7 +455,9 @@ int main(void)
 	  degree_e_cos = cosf(degree_e);
 
 	  //10kHzの割り込み
-	  if(tim3_flag){
+	  if(adc_flag){
+		  HAL_GPIO_TogglePin(LED_R_GPIO_Port, LED_R_Pin);
+
 		  //Iu,Iv,Iw -> Iα,Iβ
 		  clarke_transform();
 		  //Iα,Iβ -> Id,Iq
@@ -463,6 +469,10 @@ int main(void)
 
 		  //Vd,Vq -> Vα,Vβ
 		  inv_park_transform();
+
+		  Va = Va * (500.0 / 12.0);
+		  Vb = Vb * (500.0 / 12.0);
+
 		  //Vα,Vβ -> Vu,Vv,Vw
 		  inv_clarke_transform();
 
@@ -475,7 +485,7 @@ int main(void)
 		  SET_PWM_DUTY(V, 500 + V_PWM);
 		  SET_PWM_DUTY(W, 500 + W_PWM);
 
-		  tim3_flag = false;
+		  adc_flag = false;
 	  }
   }
   /* USER CODE END 3 */
@@ -686,7 +696,7 @@ static void MX_TIM2_Init(void)
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   sConfig.EncoderMode = TIM_ENCODERMODE_TI12;
-  sConfig.IC1Polarity = TIM_ICPOLARITY_RISING;
+  sConfig.IC1Polarity = TIM_ICPOLARITY_FALLING;
   sConfig.IC1Selection = TIM_ICSELECTION_DIRECTTI;
   sConfig.IC1Prescaler = TIM_ICPSC_DIV1;
   sConfig.IC1Filter = 5;

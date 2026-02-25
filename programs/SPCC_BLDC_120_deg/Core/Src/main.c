@@ -87,6 +87,7 @@ float degree_e = 0;
 float degree_e_sin = 0;
 float degree_e_cos = 0;
 
+int count = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -208,9 +209,9 @@ int main(void)
   MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
   /* USER CODE BEGIN 2 */
-//    HAL_TIM_PWM_Start(&MOTOR_PWM_TIMER, U_PHASE_PWM_CHANNEL);
-//    HAL_TIM_PWM_Start(&MOTOR_PWM_TIMER, V_PHASE_PWM_CHANNEL);
-//    HAL_TIM_PWM_Start(&MOTOR_PWM_TIMER, W_PHASE_PWM_CHANNEL);
+    HAL_TIM_PWM_Start(&MOTOR_PWM_TIMER, U_PHASE_PWM_CHANNEL);
+    HAL_TIM_PWM_Start(&MOTOR_PWM_TIMER, V_PHASE_PWM_CHANNEL);
+    HAL_TIM_PWM_Start(&MOTOR_PWM_TIMER, W_PHASE_PWM_CHANNEL);
   //0カウントをセット
   __HAL_TIM_SET_COUNTER(&htim2, 0);
 
@@ -225,9 +226,9 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-//	  drive_120degree(count, 300);
-//	  HAL_Delay(50);
-//	  count++;
+	  drive_120degree(count, 400);
+	  HAL_Delay(40);
+	  count++;
 
 	  /*	現在のカウントを取得	*/
 	  cnt_now = 20479 - __HAL_TIM_GET_COUNTER(&htim2);
@@ -239,7 +240,7 @@ int main(void)
 	  degree_e_sin = sinf(degree_e);
 	  degree_e_cos = cosf(degree_e);
 
-	  printf("%f\r\n", degree);
+	  printf("%f %f %f\r\n", degree_e, degree_e_sin, degree_e_cos);
   }
   /* USER CODE END 3 */
 }
