@@ -159,7 +159,7 @@ int U_PWM = 0;
 int V_PWM = 0;
 int W_PWM = 0;
 
-int Amp_PWM_MAX = 300;
+int Amp_PWM_MAX = 450;
 
 //PI制御用構造体
 PI_t Id_PI;
@@ -265,8 +265,6 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
     		I_v = (float)(adc_raw[1] - adc_offset[1]) * 0.01611;
     		I_w = (float)(adc_raw[0] - adc_offset[0]) * 0.01611;
     		I_sum = I_u + I_v + I_w;
-
-    		adc_flag = true;
     	}
     }
 }
@@ -302,7 +300,7 @@ void inv_park_transform(){
 //PI制御
 float PI_Control(PI_t *hPI){
 	hPI->error = hPI->goal - hPI->now_value;
-	hPI->error_integral += hPI->error * hPI->ki; // ここでkiを掛けて本体に蓄積
+	hPI->error_integral += hPI->error * hPI->ki;
 
 	// アンチワインドアップ（本体を直接制限する）
 	if(hPI->error_integral > hPI->integral_limit){
@@ -392,7 +390,7 @@ int main(void)
   /*	電気角のリセット	*/
 
   //電流方向U->Vのときを電気角0[rad]と定義
-  SET_PWM_DUTY(U, 150);
+  SET_PWM_DUTY(U, 300);
   SET_PWM_DUTY(V, 0);
   SET_PWM_DUTY(W, 0);
 
@@ -422,15 +420,15 @@ int main(void)
 
   //d軸電流のパラメータを設定
   Id_PI.goal = 0.0;
-  Id_PI.kp = 100;
-  Id_PI.ki = 0.005;
-  Id_PI.integral_limit = 200;
+  Id_PI.kp = 0.5;
+  Id_PI.ki = 30;
+  Id_PI.integral_limit = 300;
 
   //q軸電流のパラメータを設定
-  Iq_PI.goal = 0.8;
-  Iq_PI.kp = 100;
-  Iq_PI.ki = 0.005;
-  Iq_PI.integral_limit = 200;
+  Iq_PI.goal = 1;
+  Iq_PI.kp = 0.5;
+  Iq_PI.ki = 30;
+  Iq_PI.integral_limit = 300;
 
   /* USER CODE END 2 */
 
@@ -443,8 +441,8 @@ int main(void)
     /* USER CODE BEGIN 3 */
 
 	  /*	現在のカウントを取得	*/
-	  cnt_now = 20479 - __HAL_TIM_GET_COUNTER(&htim2);
-//	  cnt_now = __HAL_TIM_GET_COUNTER(&htim2);
+//	  cnt_now = 20479 - __HAL_TIM_GET_COUNTER(&htim2);
+	  cnt_now = __HAL_TIM_GET_COUNTER(&htim2);
 
 	  /*	ラジアン角を算出して、ついでに電気角も算出！	*/
 	  degree = (float)(cnt_now / 20480.0) * 2 * M_PI;
@@ -453,7 +451,7 @@ int main(void)
 	  degree_e_cos = cosf(degree_e);
 
 	  //10kHzの割り込み
-	  if(adc_flag){
+	  if(tim3_flag){
 		  //Iu,Iv,Iw -> Iα,Iβ
 		  clarke_transform();
 		  //Iα,Iβ -> Id,Iq
@@ -477,7 +475,7 @@ int main(void)
 		  SET_PWM_DUTY(V, 500 + V_PWM);
 		  SET_PWM_DUTY(W, 500 + W_PWM);
 
-		  adc_flag = false;
+		  tim3_flag = false;
 	  }
   }
   /* USER CODE END 3 */
@@ -684,7 +682,7 @@ static void MX_TIM2_Init(void)
   htim2.Instance = TIM2;
   htim2.Init.Prescaler = 0;
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim2.Init.Period = 20480;
+  htim2.Init.Period = 20480 -1;
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   sConfig.EncoderMode = TIM_ENCODERMODE_TI12;

@@ -21,7 +21,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include <math.h>
+#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -58,6 +59,33 @@ TIM_HandleTypeDef htim3;
 UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN PV */
+
+/*	モーターの定数	*/
+//極対数
+int pole_pairs = 11;
+
+/*	角度関係	*/
+//現在のエンコーダーのカウント
+uint16_t cnt_now = 0;
+
+//1回前のエンコーダーのカウント
+uint16_t cnt_old = 0;
+
+//回転した回数
+int revolution_count = 0;
+
+//エンコーダーが1回のループでどれだけ回転したら1回転したとみなすかのしきい値
+int revolution_threshold_num = 10000;
+
+//現在のラジアン角
+float degree = 0;
+
+//現在のラジアン機械角
+float degree_e = 0;
+
+//機械角に対するsin,cos
+float degree_e_sin = 0;
+float degree_e_cos = 0;
 
 /* USER CODE END PV */
 
@@ -134,6 +162,13 @@ void drive_120degree(int step, int duty) {
             break;
     }
 }
+
+//printfおまじない
+int _write(int file, char *ptr, int len)
+{
+  HAL_UART_Transmit(&huart1,(uint8_t *)ptr,len,10);
+  return len;
+}
 /* USER CODE END 0 */
 
 /**
@@ -144,7 +179,7 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-  int count = 0;
+	setbuf(stdout, NULL);
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -173,10 +208,14 @@ int main(void)
   MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
   /* USER CODE BEGIN 2 */
-    HAL_TIM_PWM_Start(&MOTOR_PWM_TIMER, U_PHASE_PWM_CHANNEL);
-    HAL_TIM_PWM_Start(&MOTOR_PWM_TIMER, V_PHASE_PWM_CHANNEL);
-    HAL_TIM_PWM_Start(&MOTOR_PWM_TIMER, W_PHASE_PWM_CHANNEL);
-    /* USER CODE END 2 */
+//    HAL_TIM_PWM_Start(&MOTOR_PWM_TIMER, U_PHASE_PWM_CHANNEL);
+//    HAL_TIM_PWM_Start(&MOTOR_PWM_TIMER, V_PHASE_PWM_CHANNEL);
+//    HAL_TIM_PWM_Start(&MOTOR_PWM_TIMER, W_PHASE_PWM_CHANNEL);
+  //0カウントをセット
+  __HAL_TIM_SET_COUNTER(&htim2, 0);
+
+  //エンコーダースタート！
+  HAL_TIM_Encoder_Start(&htim2, TIM_CHANNEL_ALL);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -186,9 +225,21 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  drive_120degree(count, 300);
-	  HAL_Delay(50);
-	  count++;
+//	  drive_120degree(count, 300);
+//	  HAL_Delay(50);
+//	  count++;
+
+	  /*	現在のカウントを取得	*/
+	  cnt_now = 20479 - __HAL_TIM_GET_COUNTER(&htim2);
+//	  cnt_now = __HAL_TIM_GET_COUNTER(&htim2);
+
+	  /*	ラジアン角を算出して、ついでに電気角も算出！	*/
+	  degree = (float)(cnt_now / 20480.0) * 2 * M_PI;
+	  degree_e = (float)degree * (float)pole_pairs;
+	  degree_e_sin = sinf(degree_e);
+	  degree_e_cos = cosf(degree_e);
+
+	  printf("%f\r\n", degree);
   }
   /* USER CODE END 3 */
 }

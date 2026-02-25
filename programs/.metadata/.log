@@ -800,3 +800,52 @@ java.lang.Exception: Resource '/SPCC_BLDC_FOC_dq_FF' does not exist.
 
 !ENTRY org.eclipse.cdt.core 1 0 2026-02-25 00:20:39.074
 !MESSAGE Indexed 'SPCC_BLDC_FOC_dq_FF' (25 sources, 69 headers) in 3.35 sec: 10,494 declarations; 73,818 references; 19 unresolved inclusions; 48 syntax errors; 5,004 unresolved names (5.6%)
+!SESSION 2026-02-25 15:50:25.265 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  C:\Users\dubia\Desktop\SPCC_BLDC\programs\SPCC_BLDC_FOC_dq_FF\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\dubia\Desktop\SPCC_BLDC\programs\SPCC_BLDC_FOC_dq_FF\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-02-25 15:50:32.670
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-02-25 15:50:32.673
+!MESSAGE Log4j2 initialized with config file C:\Users\dubia\Desktop\SPCC_BLDC\programs\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-02-25 15:50:42.419
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-02-25 15:50:49.535
+!MESSAGE Indexed 'SPCC_BLDC_FOC_dq_FF' (25 sources, 118 headers) in 6.4 sec: 12,807 declarations; 81,172 references; 2 unresolved inclusions; 49 syntax errors; 188 unresolved names (0.2%)
+!SESSION 2026-02-25 20:13:42.040 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-02-25 20:13:49.923
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-02-25 20:13:49.926
+!MESSAGE Log4j2 initialized with config file C:\Users\dubia\Desktop\SPCC_BLDC\programs\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-02-25 20:13:59.713
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2026-02-25 20:24:20.831 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-02-25 20:24:28.092
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-02-25 20:24:28.094
+!MESSAGE Log4j2 initialized with config file C:\Users\dubia\Desktop\SPCC_BLDC\programs\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-02-25 20:24:35.463
+!MESSAGE Started RMI Server, listening on port 41337
