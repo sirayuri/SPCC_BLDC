@@ -1,0 +1,43 @@
+% !TeX program = lualatex
+\documentclass[twocolumn, a4paper, 10pt, fleqn]{ltjsarticle}
+
+% --- パッケージ ---
+\usepackage{luatexja-fontspec} % フォント設定用
+\usepackage[top=20mm, bottom=20mm, left=18mm, right=18mm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{url}
+\usepackage{here}
+% \usepackage{flushend}
+\usepackage{booktabs} % 表の罫線を太く・美しくする
+
+% --- フォント設定 (LuaLaTeX用) ---
+\usepackage{luatexja-fontspec} % これが必要
+
+\usepackage{subcaption}
+\captionsetup{compatibility=false} % ltjsarticleとの相性問題を回避するおまじない
+\begin{document}
+
+\begin{table}[H]
+    \centering
+    \caption{設計したモーターの各パラメータ} % ★表のキャプションは「上」！
+    \label{tab:motor_params}
+    % 列指定: c=中央揃え, l=左揃え, r=右揃え
+    % ここでは 記号(中央) | 意味(左) | 値(右) | 単位(左) にしてみた
+    \begin{tabular}{clrl}
+        \toprule % 上の太線
+        記号 & パラメータ & \multicolumn{1}{c}{値} & 単位 \\ 
+        \midrule % 中の細線
+        $P_n$      & 極対数                 & 11   & - \\
+        $N$        & 1スロットのコイルの巻数 & 40   & - \\
+        $k_w$      & 巻線係数(仮定)               & 0.900  & - \\
+        $S_g$      & 磁石1つの表面積           & 120.0   & $\mathrm{mm^2}$ \\
+        $B_r$      & 磁石の残留磁束密度      & 1.182  & $\mathrm{T}$ \\
+        $l_g$      & エアギャップ長         & 2.000& $\mathrm{mm}$ \\
+        $\mu_r$    & 磁石の透磁率           & 1.050 & - \\
+        $l_m$      & 磁石の厚さ             & 5.000& $\mathrm{mm}$ \\
+        \bottomrule % 下の太線
+    \end{tabular}
+\end{table}
+
+\end{document} % ← これを追加！
