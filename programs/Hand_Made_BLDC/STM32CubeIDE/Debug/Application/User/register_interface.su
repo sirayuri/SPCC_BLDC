@@ -1,0 +1,7 @@
+C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Src/register_interface.c:37:16:RI_SetRegCommandParser	40	static
+C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Src/register_interface.c:111:16:RI_GetRegCommandParser	40	static
+C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Src/register_interface.c:154:9:RI_SetReg	88	static
+C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Src/register_interface.c:516:9:RI_GetReg	160	static
+C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Src/register_interface.c:1003:9:RI_MovString	40	static
+C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Src/register_interface.c:1030:9:RI_GetIDSize	24	static
+C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Src/register_interface.c:1064:16:RI_GetPtrReg	32	static

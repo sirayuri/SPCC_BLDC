@@ -1,0 +1,4 @@
+../../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h:895:22:LL_GPIO_SetOutputPin	16	static
+../../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h:924:22:LL_GPIO_ResetOutputPin	16	static
+C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/Any/Src/digital_output.c:45:13:DOUT_SetOutputState	16	static
+C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/Any/Src/digital_output.c:85:23:DOUT_GetOutputState	16	static

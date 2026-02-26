@@ -3151,3 +3151,37 @@ java.nio.file.AccessDeniedException: C:\Users\dubia
 
 !ENTRY org.eclipse.cdt.dsf 4 10005 2026-02-26 02:46:36.102
 !MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.gdb.internal.ui.actions.DsfTerminateCommand$3$1@78009239): Status OK: unknown code=0 OK' resulted in a rejected execution exception.
+!SESSION 2026-02-26 23:45:33.486 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  C:\Users\yosaha\Desktop\SPCC_BLDC\programs\Hand_Made_BLDC\STM32CubeIDE\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\yosaha\Desktop\SPCC_BLDC\programs\Hand_Made_BLDC\STM32CubeIDE\.cproject
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-02-26 23:45:39.285
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-02-26 23:45:39.288
+!MESSAGE Log4j2 initialized with config file C:\Users\yosaha\Desktop\SPCC_BLDC\programs\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-02-26 23:45:47.633
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-02-26 23:45:53.142
+!MESSAGE Indexed 'Hand_Made_BLDC' (68 sources, 156 headers) in 3.33 sec: 15,174 declarations; 96,620 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0018%)
+!SESSION 2026-02-27 01:36:06.900 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-02-27 01:36:11.885
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-02-27 01:36:11.887
+!MESSAGE Log4j2 initialized with config file C:\Users\yosaha\Desktop\SPCC_BLDC\programs\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-02-27 01:36:18.540
+!MESSAGE Started RMI Server, listening on port 41337

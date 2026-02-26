@@ -1,0 +1,9 @@
+../../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h:915:22:LL_APB1_GRP1_EnableClock	1
+../../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h:997:26:LL_APB1_GRP1_IsEnabledClock	2
+../../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h:1071:22:LL_APB1_GRP1_DisableClock	1
+../../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h:3901:22:LL_TIM_SetTriggerOutput	1
+../../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h:5385:22:LL_TIM_ClearFlag_CC1	1
+../../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h:5396:26:LL_TIM_IsActiveFlag_CC1	2
+../../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h:6490:22:LL_TIM_GenerateEvent_UPDATE	1
+C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/Any/Src/pwm_common.c:45:13:startTimers	2
+C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/Any/Src/pwm_common.c:78:13:waitForPolarizationEnd	5

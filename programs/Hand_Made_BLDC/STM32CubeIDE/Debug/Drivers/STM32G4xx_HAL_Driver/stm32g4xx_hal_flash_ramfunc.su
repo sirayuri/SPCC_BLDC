@@ -1,0 +1,2 @@
+C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c:93:30:HAL_FLASHEx_EnableRunPowerDown	4	static
+C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c:107:30:HAL_FLASHEx_DisableRunPowerDown	4	static

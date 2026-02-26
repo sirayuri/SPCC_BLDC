@@ -1,0 +1,8 @@
+../../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_cordic.h:724:22:LL_CORDIC_WriteData	16	static
+../../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_cordic.h:735:26:LL_CORDIC_ReadData	16	static
+C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Src/mc_math.c:57:20:MCM_Clarke	40	static
+C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Src/mc_math.c:125:13:MCM_Park	56	static
+C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Src/mc_math.c:232:20:MCM_Rev_Park	48	static
+C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Src/mc_math.c:287:24:MCM_Trig_Functions	24	static
+C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Src/mc_math.c:332:16:MCM_Sqrt	24	static,ignoring_inline_asm
+C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Src/mc_math.c:368:17:MCM_floatToIntBit	24	static
