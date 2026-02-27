@@ -1,5 +1,5 @@
 Middlewares/MotorControl/revup_ctrl.o: \
- C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/Any/Src/revup_ctrl.c \
+ C:/Users/dubia/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/Any/Src/revup_ctrl.c \
  ../../MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/Any/Inc/revup_ctrl.h \
  ../../MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/Any/Inc/mc_type.h \
  ../../Inc/mc_stm_types.h \

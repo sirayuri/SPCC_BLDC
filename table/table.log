@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.8.14)  26 FEB 2026 15:48
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.8.14)  27 FEB 2026 11:10
  restricted system commands enabled.
  file:line:error style messages enabled.
 **c:/Users/dubia/Desktop/SPCC_BLDC/table/table
@@ -904,12 +904,12 @@ Here is how much of LuaTeX's memory you used:
  125244,794899 words of node,token memory allocated
  1075 words of node memory still in use:
    10 hlist, 2 vlist, 5 rule, 2 glue, 4 kern, 1 glyph, 214 attribute, 54 glue_spec, 31 attribute_list, 1 write, 13 user_defined nodes
-   avail lists: 1:8,2:7823,3:45,4:133,5:40,6:6,7:995,8:4,9:371,10:12
+   avail lists: 1:8,2:8387,3:47,4:141,5:40,6:6,7:1073,8:4,9:395,10:12
  37777 multiletter control sequences out of 65536+600000
  43 fonts using 21409503 bytes
  119i,10n,128p,1796b,432s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf><c:/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2025/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb>
-Output written on table.pdf (1 page, 37461 bytes).
+Output written on table.pdf (1 page, 37930 bytes).
 
 PDF statistics: 37 PDF objects out of 1000 (max. 8388607)
  22 compressed objects within 1 object stream

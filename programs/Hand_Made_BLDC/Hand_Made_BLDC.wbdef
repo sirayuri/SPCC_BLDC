@@ -64,12 +64,12 @@
         <define key="MOTOR_MAX_SPEED_RPM" value="5000" />
         <define key="MAX_APPLICATION_SPEED" value="5000" />
         <define key="MIN_APPLICATION_SPEED" value="0" />
-        <define key="DC_CURRENT_RS_MEAS" value="15" />
-        <define key="NOMINAL_CURRENT" value="8164" />
-        <define key="ID_DEMAG" value="-8164" />
+        <define key="DC_CURRENT_RS_MEAS" value="20" />
+        <define key="NOMINAL_CURRENT" value="10885" />
+        <define key="ID_DEMAG" value="-10885" />
         <define key="MOTOR_VOLTAGE_CONSTANT" value="24.7" />
-        <define key="RS" value="2" />
-        <define key="LS" value="0.0006" />
+        <define key="RS" value="1.93" />
+        <define key="LS" value="0.000591" />
         <define key="LDLQ_RATIO" value="1.000" />
         <define key="HALL_SENSORS_AVAILABLE" value="FALSE" />
         <define key="HALL_SENSORS_PLACEMENT" value="DEGREES_120" />
@@ -77,11 +77,11 @@
         <define key="ENCODER_AVAILABLE" value="TRUE" />
         <define key="ENCODER_PPR" value="5120" />
         <define key="WB_UI_MAGNETIC_STRUCTURE" value="SM-PMSM" />
-        <define key="WB_UI_MAX_CURRENT" value="15" />
+        <define key="WB_UI_MAX_CURRENT" value="20" />
         <define key="WB_UI_MAX_NOMINAL_DC_VOLTAGE" value="24" />
         <define key="WB_UI_INERTIA" value="5.119" />
         <define key="WB_UI_FRICTION" value="12.13" />
-        <define key="WB_UI_ENCODER_HAS_INDEX_PIN" value="TRUE" />
+        <define key="WB_UI_ENCODER_HAS_INDEX_PIN" value="FALSE" />
         <define key="PWM_TIMER_SELECTION" value="PWM_TIM1" />
         <define key="PHASE_UH_POLARITY" value="H_ACTIVE_HIGH" />
         <define key="PHASE_VH_POLARITY" value="H_ACTIVE_HIGH" />
@@ -128,22 +128,22 @@
         <define key="SP_KIDIV" value="16384" />
         <define key="SP_KDDIV" value="16" />
         <define key="SPD_DIFFERENTIAL_TERM_ENABLING" value="DISABLE" />
-        <define key="DEFAULT_TARGET_SPEED_RPM" value="1798" />
-        <define key="CONSTANT1_Q" value="1735361" />
-        <define key="CONSTANT1_D" value="1735361" />
+        <define key="DEFAULT_TARGET_SPEED_RPM" value="300" />
+        <define key="CONSTANT1_Q" value="1709331" />
+        <define key="CONSTANT1_D" value="1709331" />
         <define key="CONSTANT2_QD" value="105171" />
-        <define key="IQMAX" value="8164" />
+        <define key="IQMAX" value="10885" />
         <define key="SEGDIV" value="0" />
         <define key="ANGC" value="{0,0,0,0,0,0,0,0}" />
         <define key="OFST" value="{0,0,0,0,0,0,0,0}" />
         <define key="SPEED_LOOP_FREQUENCY_HZ" value="1000" />
         <define key="POSITION_CTRL_ENABLING" value="DISABLE" />
-        <define key="PID_TORQUE_KP_DEFAULT" value="2312" />
-        <define key="PID_TORQUE_KI_DEFAULT" value="3853" />
+        <define key="PID_TORQUE_KP_DEFAULT" value="2277" />
+        <define key="PID_TORQUE_KI_DEFAULT" value="3718" />
         <define key="PID_TORQUE_KD_DEFAULT" value="100" />
         <define key="DEFAULT_TORQUE_COMPONENT" value="0" />
-        <define key="PID_FLUX_KP_DEFAULT" value="2312" />
-        <define key="PID_FLUX_KI_DEFAULT" value="3853" />
+        <define key="PID_FLUX_KP_DEFAULT" value="2277" />
+        <define key="PID_FLUX_KI_DEFAULT" value="3718" />
         <define key="PID_FLUX_KD_DEFAULT" value="100" />
         <define key="DEFAULT_FLUX_COMPONENT" value="0" />
         <define key="FLUX_WEAKENING_ENABLING" value="DISABLE" />
@@ -185,10 +185,10 @@
         <define key="ENCODER" value="TRUE" />
         <define key="ENC_AVERAGING_FIFO_DEPTH" value="16" />
         <define key="ENC_ICx_FILTER" value="119" />
-        <define key="ENC_INVERT_SPEED" value="DISABLE" />
+        <define key="ENC_INVERT_SPEED" value="ENABLE" />
         <define key="ALIGNMENT_DURATION" value="500" />
         <define key="ALIGNMENT_ANGLE_DEG" value="90" />
-        <define key="FINAL_I_ALIGNMENT" value="2721" />
+        <define key="FINAL_I_ALIGNMENT" value="3810" />
         <define key="ENC_TIMER_SELECTION" value="ENC_TIM4" />
         <define key="ENC_USE_CH3" value="FALSE" />
         <define key="ENC_A_GPIO_PORT" value="GPIOB" />

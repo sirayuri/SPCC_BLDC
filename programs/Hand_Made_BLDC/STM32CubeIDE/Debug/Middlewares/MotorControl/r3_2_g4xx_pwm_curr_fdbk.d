@@ -1,5 +1,5 @@
 Middlewares/MotorControl/r3_2_g4xx_pwm_curr_fdbk.o: \
- C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/G4xx/Src/r3_2_g4xx_pwm_curr_fdbk.c \
+ C:/Users/dubia/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/G4xx/Src/r3_2_g4xx_pwm_curr_fdbk.c \
  ../../MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/G4xx/Inc/r3_2_g4xx_pwm_curr_fdbk.h \
  ../../MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/Any/Inc/pwm_curr_fdbk.h \
  ../../MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/Any/Inc/mc_type.h \

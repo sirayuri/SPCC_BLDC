@@ -1,5 +1,5 @@
 Application/User/mc_api.o: \
- C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Src/mc_api.c \
+ C:/Users/dubia/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Src/mc_api.c \
  ../../Inc/mc_interface.h \
  ../../MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/Any/Inc/mc_type.h \
  ../../Inc/mc_stm_types.h \

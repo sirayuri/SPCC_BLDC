@@ -62,8 +62,8 @@ all: main-build
 main-build: Hand_Made_BLDC.elf secondary-outputs
 
 # Tool invocations
-Hand_Made_BLDC.elf Hand_Made_BLDC.map: $(OBJS) $(USER_OBJS) C:\Users\yosaha\Desktop\SPCC_BLDC\programs\Hand_Made_BLDC\STM32CubeIDE\STM32G431CBUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Hand_Made_BLDC.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\yosaha\Desktop\SPCC_BLDC\programs\Hand_Made_BLDC\STM32CubeIDE\STM32G431CBUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Hand_Made_BLDC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Hand_Made_BLDC.elf Hand_Made_BLDC.map: $(OBJS) $(USER_OBJS) C:\Users\dubia\Desktop\SPCC_BLDC\programs\Hand_Made_BLDC\STM32CubeIDE\STM32G431CBUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Hand_Made_BLDC.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\dubia\Desktop\SPCC_BLDC\programs\Hand_Made_BLDC\STM32CubeIDE\STM32G431CBUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Hand_Made_BLDC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

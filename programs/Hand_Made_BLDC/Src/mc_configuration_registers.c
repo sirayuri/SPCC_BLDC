@@ -45,7 +45,7 @@ static const ApplicationConfig_reg_t M1_ApplicationConfig_reg =
 {
   .maxMechanicalSpeed = 5000,
   .maxReadableCurrent = MAX_READABLE_CURRENT,
-  .nominalCurrent = 8164,
+  .nominalCurrent = 10885,
   .nominalVoltage = 24,
   .driveType = DRIVE_TYPE_M1,
 };
@@ -54,10 +54,10 @@ const MotorConfig_reg_t M1_MotorConfig_reg =
 {
   .polePairs = 11,
   .ratedFlux = 24.7,
-  .rs = 2,
-  .ls = 0.0006*1.000,
-  .ld = 0.0006,
-  .maxCurrent = 8164,
+  .rs = 1.93,
+  .ls = 0.000591*1.000,
+  .ld = 0.000591,
+  .maxCurrent = 10885,
   .name = "Allen Bradley I"
 };
 

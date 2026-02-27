@@ -1,5 +1,5 @@
 Middlewares/MotorControl/pwm_common.o: \
- C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/Any/Src/pwm_common.c \
+ C:/Users/dubia/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/Any/Src/pwm_common.c \
  ../../MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/Any/Inc/pwm_common.h \
  ../../MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/Any/Inc/mc_type.h \
  ../../Inc/mc_stm_types.h \

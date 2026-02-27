@@ -932,10 +932,10 @@
         "description": "",
         "polePairs": 11,
         "mmsType": "SM-PMSM",
-        "rs": 2,
-        "ls": 0.6,
+        "rs": 1.93,
+        "ls": 0.591,
         "mmsLd_lq_ratio": "Number.NaN",
-        "maxCurrent": 15,
+        "maxCurrent": 20,
         "maxDCVoltage": 24,
         "BEmfConstant": "Number.NaN",
         "inertia": "Number.NaN",
@@ -949,14 +949,14 @@
         "hasQuadratureEncoder": true,
         "quadratureEncoder": {
           "pulsesPerMechanicalRevolution": 5120,
-          "hasIndexPin": true
+          "hasIndexPin": false
         },
         "nominalCurrent": "Number.NaN",
         "nominalDCVoltage": "Number.NaN"
       },
       "powerSupply_0": {
         "nominalDcBusVoltage": 24,
-        "nominalCurrent": 15,
+        "nominalCurrent": 20,
         "maxCurrent_pk": "Number.NaN",
         "icl": {
           "enable": false,
@@ -974,12 +974,12 @@
             "_tag": "encoder",
             "speedFIFODepth": "Number.NaN",
             "inputFilterDuration": "Number.NaN",
-            "reverseCountDirection": false,
+            "reverseCountDirection": true,
             "encoderModeAbsolute": false,
             "startUpParam": {
               "duration": 500,
               "electricalAlignAngle": "Number.NaN",
-              "finalCurrent": 5
+              "finalCurrent": 7
             }
           }
         },
@@ -1056,6 +1056,133 @@
           "FOCSwitchOver": {
             "revupToFocSwitchOverEnabled": true,
             "focSwitchOverDuration": "Number.NaN"
+          }
+        }
+      },
+      "driveManagement_0": {
+        "currentReg": {
+          "controlMode": "",
+          "autoPI": true,
+          "cutOffFrequency": "Number.NaN",
+          "useMTPA": false,
+          "feedForward": false,
+          "MTPATarget": "Number.NaN"
+        },
+        "speedReg": {
+          "executionRate": "Number.NaN",
+          "targetSpeed": 300,
+          "KpKi": {
+            "P": {
+              "num": "Number.NaN",
+              "den": "Number.NaN"
+            },
+            "I": {
+              "num": "Number.NaN",
+              "den": "Number.NaN"
+            }
+          },
+          "autoPI": true
+        },
+        "torqueReg": {
+          "target": "Number.NaN",
+          "KpKi": {
+            "P": {
+              "num": "Number.NaN",
+              "den": "Number.NaN"
+            },
+            "I": {
+              "num": "Number.NaN",
+              "den": "Number.NaN"
+            }
+          }
+        },
+        "fluxReg": {
+          "target": "Number.NaN",
+          "KpKi": {
+            "P": {
+              "num": "Number.NaN",
+              "den": "Number.NaN"
+            },
+            "I": {
+              "num": "Number.NaN",
+              "den": "Number.NaN"
+            }
+          }
+        },
+        "fluxWeak": {
+          "enabled": false,
+          "voltageLimit": "Number.NaN",
+          "KpKi": {
+            "P": {
+              "num": "Number.NaN",
+              "den": "Number.NaN"
+            },
+            "I": {
+              "num": "Number.NaN",
+              "den": "Number.NaN"
+            }
+          }
+        },
+        "posReg": {
+          "executionRate": "Number.NaN",
+          "KpKiKd": {
+            "P": {
+              "num": 10000,
+              "den": 1024
+            },
+            "D": {
+              "num": 1000,
+              "den": 16
+            },
+            "I": {
+              "num": 1000,
+              "den": 32768
+            }
+          }
+        }
+      },
+      "powerSwitches_0": {
+        "setting": {
+          "PWMFrequency": 16000,
+          "chargeBootCapDuty": "Number.NaN",
+          "chargeBootCapMs": "Number.NaN",
+          "drivingTopology": ""
+        },
+        "modulationFlags": {
+          "overModulation": false,
+          "discontinuousPWM": false
+        }
+      },
+      "currentSensing_0": {
+        "executionRate": "Number.NaN",
+        "topology": "",
+        "topologyData": {
+          "_tag": "3sh",
+          "ampMode": "",
+          "sensing": {
+            "amplification": "internal",
+            "shuntResistor": "Number.NaN",
+            "gainMode": "",
+            "sensingType": "",
+            "gain": "Number.NaN",
+            "tNoise": "Number.NaN",
+            "tRise": "Number.NaN",
+            "internalGainFactor": "Number.NaN",
+            "maxModulation": "Number.NaN",
+            "samplingTime": "Number.NaN",
+            "withFiltering": false
+          }
+        },
+        "ocpData": {
+          "enable": true,
+          "ocpMode": "",
+          "ocp": {
+            "mode": "internal",
+            "digitalFilter": "Number.NaN",
+            "threshold": "Number.NaN",
+            "bkinMode": "",
+            "invertingInput": "DAC",
+            "voltageRef": "Number.NaN"
           }
         }
       }

@@ -27,25 +27,25 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  11 .ARM.attributes 00000030  00000000  00000000  00012448  2**0
                   CONTENTS, READONLY
- 12 .debug_line   000369c3  00000000  00000000  00012478  2**0
+ 12 .debug_line   0003698e  00000000  00000000  00012478  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 13 .debug_line_str 0000007c  00000000  00000000  00048e3b  2**0
+ 13 .debug_line_str 0000007b  00000000  00000000  00048e06  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_info   00032687  00000000  00000000  00048eb7  2**0
+ 14 .debug_info   00032687  00000000  00000000  00048e81  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_abbrev 00006fad  00000000  00000000  0007b53e  2**0
+ 15 .debug_abbrev 00006fad  00000000  00000000  0007b508  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_aranges 00002910  00000000  00000000  000824f0  2**3
+ 16 .debug_aranges 00002910  00000000  00000000  000824b8  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_str    00106d22  00000000  00000000  00084e00  2**0
+ 17 .debug_str    00106cf3  00000000  00000000  00084dc8  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_rnglists 00001ef9  00000000  00000000  0018bb22  2**0
+ 18 .debug_rnglists 00001ef9  00000000  00000000  0018babb  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_macro  0002d206  00000000  00000000  0018da1b  2**0
+ 19 .debug_macro  0002d206  00000000  00000000  0018d9b4  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .comment      00000043  00000000  00000000  001bac21  2**0
+ 20 .comment      00000043  00000000  00000000  001babba  2**0
                   CONTENTS, READONLY
- 21 .debug_frame  0000acf4  00000000  00000000  001bac64  2**2
+ 21 .debug_frame  0000acf4  00000000  00000000  001bac00  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -3916,8 +3916,8 @@ static void MX_TIM4_Init(void)
   sConfig.IC1Filter = M1_ENC_IC_FILTER;
  80018fc:	230c      	movs	r3, #12
  80018fe:	61fb      	str	r3, [r7, #28]
-  sConfig.IC2Polarity = TIM_ICPOLARITY_RISING;
- 8001900:	2300      	movs	r3, #0
+  sConfig.IC2Polarity = TIM_ICPOLARITY_FALLING;
+ 8001900:	2302      	movs	r3, #2
  8001902:	623b      	str	r3, [r7, #32]
   sConfig.IC2Selection = TIM_ICSELECTION_DIRECTTI;
  8001904:	2301      	movs	r3, #1

@@ -1,5 +1,5 @@
 Drivers/STM32G4xx_HAL_Driver/stm32g4xx_hal_dma.o: \
- C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c \
+ C:/Users/dubia/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c \
  ../../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h \
  ../../Inc/stm32g4xx_hal_conf.h \
  ../../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h \

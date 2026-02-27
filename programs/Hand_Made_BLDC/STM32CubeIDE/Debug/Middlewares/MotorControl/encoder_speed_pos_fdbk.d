@@ -1,5 +1,5 @@
 Middlewares/MotorControl/encoder_speed_pos_fdbk.o: \
- C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c \
+ C:/Users/dubia/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c \
  ../../MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/Any/Inc/encoder_speed_pos_fdbk.h \
  ../../MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/Any/Inc/speed_pos_fdbk.h \
  ../../MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/Any/Inc/mc_type.h \

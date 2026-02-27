@@ -1,5 +1,5 @@
 Drivers/CMSIS/system_stm32g4xx.o: \
- C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Src/system_stm32g4xx.c \
+ C:/Users/dubia/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Src/system_stm32g4xx.c \
  ../../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h \
  ../../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h \
  ../../Drivers/CMSIS/Include/core_cm4.h \

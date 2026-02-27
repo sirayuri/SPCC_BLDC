@@ -1,5 +1,5 @@
 Application/User/mcp_config.o: \
- C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Src/mcp_config.c \
+ C:/Users/dubia/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Src/mcp_config.c \
  ../../Inc/parameters_conversion.h ../../Inc/mc_math.h \
  ../../MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/Any/Inc/mc_type.h \
  ../../Inc/mc_stm_types.h \

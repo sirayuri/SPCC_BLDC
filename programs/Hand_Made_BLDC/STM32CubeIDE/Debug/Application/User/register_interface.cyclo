@@ -1,7 +1,7 @@
-C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Src/register_interface.c:37:16:RI_SetRegCommandParser	9
-C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Src/register_interface.c:111:16:RI_GetRegCommandParser	3
-C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Src/register_interface.c:154:9:RI_SetReg	103
-C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Src/register_interface.c:516:9:RI_GetReg	109
-C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Src/register_interface.c:1003:9:RI_MovString	4
-C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Src/register_interface.c:1030:9:RI_GetIDSize	5
-C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Src/register_interface.c:1064:16:RI_GetPtrReg	28
+C:/Users/dubia/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Src/register_interface.c:37:16:RI_SetRegCommandParser	9
+C:/Users/dubia/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Src/register_interface.c:111:16:RI_GetRegCommandParser	3
+C:/Users/dubia/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Src/register_interface.c:154:9:RI_SetReg	103
+C:/Users/dubia/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Src/register_interface.c:516:9:RI_GetReg	109
+C:/Users/dubia/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Src/register_interface.c:1003:9:RI_MovString	4
+C:/Users/dubia/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Src/register_interface.c:1030:9:RI_GetIDSize	5
+C:/Users/dubia/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/Src/register_interface.c:1064:16:RI_GetPtrReg	28

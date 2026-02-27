@@ -62,11 +62,11 @@
 #define REGULATION_EXECUTION_RATE     1    /*!< FOC execution rate in
                                                            number of PWM cycles */
 /* Gains values for torque and flux control loops */
-#define PID_TORQUE_KP_DEFAULT         2312
-#define PID_TORQUE_KI_DEFAULT         3853
+#define PID_TORQUE_KP_DEFAULT         2277
+#define PID_TORQUE_KI_DEFAULT         3718
 #define PID_TORQUE_KD_DEFAULT         100
-#define PID_FLUX_KP_DEFAULT           2312
-#define PID_FLUX_KI_DEFAULT           3853
+#define PID_FLUX_KP_DEFAULT           2277
+#define PID_FLUX_KI_DEFAULT           3718
 #define PID_FLUX_KD_DEFAULT           100
 
 /* Torque/Flux control loop gains dividers*/
@@ -98,11 +98,11 @@
 /* USER CODE END PID_SPEED_INTEGRAL_INIT_DIV */
 
 #define SPD_DIFFERENTIAL_TERM_ENABLING DISABLE
-#define IQMAX                          8164
+#define IQMAX                          10885
 
 /* Default settings */
 #define DEFAULT_CONTROL_MODE           MCM_SPEED_MODE
-#define DEFAULT_TARGET_SPEED_RPM       1798
+#define DEFAULT_TARGET_SPEED_RPM       300
 #define DEFAULT_TARGET_SPEED_UNIT      (DEFAULT_TARGET_SPEED_RPM*SPEED_UNIT/U_RPM)
 #define DEFAULT_TORQUE_COMPONENT       0
 #define DEFAULT_FLUX_COMPONENT         0
@@ -138,7 +138,7 @@
 /* Encoder alignment */
 #define ALIGNMENT_DURATION              500 /*!< milliseconds */
 #define ALIGNMENT_ANGLE_DEG             90 /*!< degrees [0...359] */
-#define FINAL_I_ALIGNMENT               2721 /*!< s16A */
+#define FINAL_I_ALIGNMENT               3810 /*!< s16A */
 // With ALIGNMENT_ANGLE_DEG equal to 90 degrees final alignment
 // phase current = (FINAL_I_ALIGNMENT * 1.65/ Av)/(32767 * Rshunt)
 // being Av the voltage gain between Rshunt and A/D input

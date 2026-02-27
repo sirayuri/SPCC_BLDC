@@ -7,9 +7,9 @@
 ../../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h:5363:22:LL_TIM_ClearFlag_UPDATE	16	static
 ../../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h:5825:22:LL_TIM_EnableIT_UPDATE	16	static
 ../../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h:5836:22:LL_TIM_DisableIT_UPDATE	16	static
-C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c:61:13:ENC_Init	32	static
-C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c:116:13:ENC_Clear	24	static
-C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c:144:16:ENC_CalcAngle	32	static
-C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c:202:13:ENC_CalcAvrgMecSpeedUnit	64	static
-C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c:358:13:ENC_SetMecAngle	32	static
-C:/Users/yosaha/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c:398:14:ENC_IRQHandler	24	static
+C:/Users/dubia/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c:61:13:ENC_Init	32	static
+C:/Users/dubia/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c:116:13:ENC_Clear	24	static
+C:/Users/dubia/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c:144:16:ENC_CalcAngle	32	static
+C:/Users/dubia/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c:202:13:ENC_CalcAvrgMecSpeedUnit	64	static
+C:/Users/dubia/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c:358:13:ENC_SetMecAngle	32	static
+C:/Users/dubia/Desktop/SPCC_BLDC/programs/Hand_Made_BLDC/MCSDK_v6.1.2-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c:398:14:ENC_IRQHandler	24	static
