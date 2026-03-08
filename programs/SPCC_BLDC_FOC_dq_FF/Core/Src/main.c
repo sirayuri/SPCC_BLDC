@@ -75,6 +75,10 @@ typedef struct{
 //PWM出力関数
 #define SET_PWM_DUTY(PHASE, DUTY) __HAL_TIM_SET_COMPARE(&MOTOR_PWM_TIMER, PHASE##_PHASE_PWM_CHANNEL, DUTY)
 
+#define SQRT3_OVER_2 0.8660254f
+#define ONE_OVER_SQRT3 0.57735026f
+#define PI 3.1415f
+
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
@@ -167,15 +171,15 @@ PI_t Iq_PI;
 
 volatile bool tim1_flag = false;
 volatile bool tim3_flag = false;
-volatile bool adc_flag = false;
+volatile bool zero_set_flag = false;
 
 //ログ用
-int loop_count = 0;
-//float current_log[2][400] = {0};
-float UVW_log[3][400] = {0};
+#define LOG_SIZE 500
+float dq_log[2][LOG_SIZE] = {0};
+int log_index = 0;
+int log_prescaler = 0;
+volatile bool logging_active = false;
 
-//回転のカウント
-int cycle_count = 1;
 
 /*	位置PID用変数	*/
 PID_t Place_PID;
@@ -194,7 +198,14 @@ static void MX_USART1_UART_Init(void);
 static void MX_TIM2_Init(void);
 static void MX_TIM1_Init(void);
 /* USER CODE BEGIN PFP */
-
+int constrain(int num, int min, int max);
+float constrainf(float num, float min, float max);
+int _write(int file, char *ptr, int len);
+void clarke_transform(void);
+void park_transform(void);
+void inv_clarke_transform(void);
+void inv_park_transform(void);
+float PI_Control(PI_t *hPI);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -245,7 +256,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 //ADCのDAM割り込み！
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 {
-    if (hadc->Instance == ADC1) {
+    if (hadc->Instance == ADC1 && !zero_set_flag) {
     	if(__HAL_TIM_GET_COUNTER(&htim3) < 500){
         	//オフセット検出モードか、電流センシングモードか
         	if(offset_done_flag == false){
@@ -264,11 +275,59 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
         	}
         	else{
         		//(3.3 / 4096.0)) / 0.05 = 0.01611
-        		I_u = (float)(adc_raw[2] - adc_offset[2]) * 0.01611;
-        		I_v = (float)(adc_raw[1] - adc_offset[1]) * 0.01611;
-        		I_w = (float)(adc_raw[0] - adc_offset[0]) * 0.01611;
+        		I_u = (float)(adc_raw[2] - adc_offset[2]) * 0.01611f;
+        		I_v = (float)(adc_raw[1] - adc_offset[1]) * 0.01611f;
+        		I_w = (float)(adc_raw[0] - adc_offset[0]) * 0.01611f;
         		I_sum = I_u + I_v + I_w;
-        		adc_flag = true;
+
+				/*	現在のカウントを取得	*/
+				cnt_now = __HAL_TIM_GET_COUNTER(&htim2);
+
+				/*	ラジアン角を算出して、ついでに電気角も算出！	*/
+				degree = (float)(cnt_now / 20480.0f) * 2.0f * PI;
+				degree_e = (float)degree * (float)pole_pairs;
+				degree_e_sin = sinf(degree_e);
+				degree_e_cos = cosf(degree_e);
+
+				HAL_GPIO_TogglePin(LED_R_GPIO_Port, LED_R_Pin);
+
+				//Iu,Iv,Iw -> Iα,Iβ
+				clarke_transform();
+				//Iα,Iβ -> Id,Iq
+				park_transform();
+
+				//Id,IqをPI制御
+				Vd = PI_Control(&Id_PI);
+				Vq = PI_Control(&Iq_PI);
+
+				// ★ ログ記録 (10kHzを100Hzに間引いて500件保存)
+				if (logging_active && log_index < LOG_SIZE) {
+					log_prescaler++;
+					if (log_prescaler >= 100) {
+						log_prescaler = 0;
+						dq_log[0][log_index] = Id;
+						dq_log[1][log_index] = Iq;
+						log_index++;
+					}
+				}
+
+				//Vd,Vq -> Vα,Vβ
+				inv_park_transform();
+
+				Va = Va * (500.0f / 12.0f);
+				Vb = Vb * (500.0f / 12.0f);
+
+				//Vα,Vβ -> Vu,Vv,Vw
+				inv_clarke_transform();
+
+				U_PWM = constrain(U_PWM, -Amp_PWM_MAX, Amp_PWM_MAX);
+				V_PWM = constrain(V_PWM, -Amp_PWM_MAX, Amp_PWM_MAX);
+				W_PWM = constrain(W_PWM, -Amp_PWM_MAX, Amp_PWM_MAX);
+
+				//PWMをセット
+				SET_PWM_DUTY(U, 500 + U_PWM);
+				SET_PWM_DUTY(V, 500 + V_PWM);
+				SET_PWM_DUTY(W, 500 + W_PWM);
         	}
     	}
     }
@@ -277,7 +336,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 //clarke変換
 void clarke_transform(){
 	Ia = I_u;
-	Ib = (I_u + 2 * I_v) / sqrtf(3.0);
+	Ib = (I_u + 2.0f * I_v) * ONE_OVER_SQRT3;
 }
 
 //park変換
@@ -292,8 +351,8 @@ void park_transform(){
 //逆clarke変換
 void inv_clarke_transform(){
 	U_PWM = (int)Va;
-	V_PWM = (int)((sqrtf(3.0) * Vb - Va) / 2);
-	W_PWM = (int)((-sqrtf(3.0) * Vb - Va) / 2);
+	V_PWM = (int)((SQRT3_OVER_2 * Vb - Va * 0.5f));
+	W_PWM = (int)((-SQRT3_OVER_2 * Vb - Va * 0.5f));
 }
 
 //逆park変換
@@ -359,6 +418,8 @@ int main(void)
 
   /*	前処理スタート	*/
 
+  HAL_Delay(5000);
+
   //全IR2302をロック(安全のため！)
   HAL_GPIO_WritePin(U_SD_GPIO_Port, U_SD_Pin, RESET);
   HAL_GPIO_WritePin(V_SD_GPIO_Port, V_SD_Pin, RESET);
@@ -378,9 +439,9 @@ int main(void)
   HAL_GPIO_WritePin(W_SD_GPIO_Port, W_SD_Pin, SET);
 
   //回転を固定
-  SET_PWM_DUTY(U, 0);
-  SET_PWM_DUTY(V, 0);
-  SET_PWM_DUTY(W, 0);
+  SET_PWM_DUTY(U, 500);
+  SET_PWM_DUTY(V, 500);
+  SET_PWM_DUTY(W, 500);
 
   //ADCをDMAモードで待機！
   if (HAL_ADC_Start_DMA(&hadc1, (uint32_t*)adc_raw, 3) != HAL_OK)
@@ -392,15 +453,19 @@ int main(void)
 	  //オフセット電圧検出待ち...
   }
 
+  zero_set_flag = true;
+
   /*	電気角のリセット	*/
 
   //電流方向U->Vのときを電気角0[rad]と定義
-  SET_PWM_DUTY(U, 200);
-  SET_PWM_DUTY(V, 0);
-  SET_PWM_DUTY(W, 0);
+  SET_PWM_DUTY(U, 700);
+  SET_PWM_DUTY(V, 500);
+  SET_PWM_DUTY(W, 500);
 
   //固定待ち...
-  HAL_Delay(5000);
+  HAL_Delay(700);
+
+  zero_set_flag = false;
 
   //0カウントをセット
   __HAL_TIM_SET_COUNTER(&htim2, 0);
@@ -424,17 +489,40 @@ int main(void)
   /*	FOCスタート		*/
 
   //d軸電流のパラメータを設定
-  Id_PI.goal = 0.0;
-  Id_PI.kp = 1.88;
-  Id_PI.ki = 1;
-  Id_PI.integral_limit = 10;
+  Id_PI.goal = 0.0f;
+  Id_PI.kp = 2.0f;
+  Id_PI.ki = 0.7f;
+  Id_PI.integral_limit = 10.0f;
 
   //q軸電流のパラメータを設定
-  Iq_PI.goal = 3.2;
-  Iq_PI.kp = 1.88;
-  Iq_PI.ki = 1;
-  Iq_PI.integral_limit = 10;
+  Iq_PI.goal = 1.0f;
+  Iq_PI.kp = 2.0f;
+  Iq_PI.ki = 0.7f;
+  Iq_PI.integral_limit = 10.0f;
 
+  // ログ記録スタート
+	logging_active = true;
+
+	// 5秒間FOCで回す
+	HAL_Delay(5000);
+
+	// 5秒経過したら止める（安全のためにIq=0にしてIR2302をシャットダウン）
+	logging_active = false;
+	Iq_PI.goal = 0.0f;
+
+	HAL_GPIO_WritePin(U_SD_GPIO_Port, U_SD_Pin, RESET);
+	HAL_GPIO_WritePin(V_SD_GPIO_Port, V_SD_Pin, RESET);
+	HAL_GPIO_WritePin(W_SD_GPIO_Port, W_SD_Pin, RESET);
+	SET_PWM_DUTY(U, 0);
+	SET_PWM_DUTY(V, 0);
+	SET_PWM_DUTY(W, 0);
+
+	// 溜め込んだdq軸電流のログをUARTで一気に吐き出す
+	printf("Id, Iq\r\n");
+	for(int i = 0; i < LOG_SIZE; i++){
+		printf("%f, %f\r\n", dq_log[0][i], dq_log[1][i]);
+		HAL_Delay(2); // UARTのバッファ溢れ（文字化け）防止
+	}
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -445,48 +533,6 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
-	  /*	現在のカウントを取得	*/
-	  cnt_now = __HAL_TIM_GET_COUNTER(&htim2);
-
-	  /*	ラジアン角を算出して、ついでに電気角も算出！	*/
-	  degree = (float)(cnt_now / 20480.0) * 2 * M_PI;
-	  degree_e = (float)degree * (float)pole_pairs;
-	  degree_e_sin = sinf(degree_e);
-	  degree_e_cos = cosf(degree_e);
-
-	  //10kHzの割り込み
-	  if(adc_flag){
-		  HAL_GPIO_TogglePin(LED_R_GPIO_Port, LED_R_Pin);
-
-		  //Iu,Iv,Iw -> Iα,Iβ
-		  clarke_transform();
-		  //Iα,Iβ -> Id,Iq
-		  park_transform();
-
-		  //Id,IqをPI制御
-		  Vd = PI_Control(&Id_PI);
-		  Vq = PI_Control(&Iq_PI);
-
-		  //Vd,Vq -> Vα,Vβ
-		  inv_park_transform();
-
-		  Va = Va * (500.0 / 12.0);
-		  Vb = Vb * (500.0 / 12.0);
-
-		  //Vα,Vβ -> Vu,Vv,Vw
-		  inv_clarke_transform();
-
-		  U_PWM = constrain(U_PWM, -Amp_PWM_MAX, Amp_PWM_MAX);
-		  V_PWM = constrain(V_PWM, -Amp_PWM_MAX, Amp_PWM_MAX);
-		  W_PWM = constrain(W_PWM, -Amp_PWM_MAX, Amp_PWM_MAX);
-
-		  //PWMをセット
-		  SET_PWM_DUTY(U, 500 + U_PWM);
-		  SET_PWM_DUTY(V, 500 + V_PWM);
-		  SET_PWM_DUTY(W, 500 + W_PWM);
-
-		  adc_flag = false;
-	  }
   }
   /* USER CODE END 3 */
 }
